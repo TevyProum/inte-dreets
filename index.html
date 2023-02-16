@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/scss/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="styles/owlcarousel/owl.theme.default.min.css">
+    <title>DREETS</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" defer></script>
+    <script src="js/menu.js" defer></script>
+    <script src="js/owl.carousel.min.js" defer></script>
+    <script src="js/slider.js" defer></script>
+    <script src="js/keyfigures.js" defer></script>
+    <script src="js/popin.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <!-- "headerImages" => seulement sur mobile -->
+        <div class="headerImages">
+            <a href="index.html">
+                <img src="assets/images/logo.svg" alt="Logo PRST">
+            </a>
+            <div>
+                <button id="searchIcon"></button>
+                <button id="burger"></button>
+            </div>
+        </div>
+        <!-- "headerImages" => seulement sur mobile -->
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.svg" alt="Logo PRST">
+            </a>
+            <form class="searchBar hidden">
+                <input type="search" placeholder="Rechercher une structure..." />
+                <button type="submit">Rechercher</button>
+            </form>
+            <nav>
+                <a href="annuaire.html">Annuaire</a>
+                <a href="faq.html">FAQ</a>
+                <a href="presentation.html">Présentation</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero__text">
+                    <h1>Plan Régional Santé Travail Hauts-de-France 2021-2025</h1>
+                    <p>Ensemble pour agir à la source des risques professionnels et pour maintenir les travailleurs en emploi et en bonne santé, tout au long de leur trajectoire professionnelle.</p>
+                </div>
+                <div class="hero__overlay"></div>
+                <form class="searchBar">
+                    <input type="search" placeholder="Rechercher une structure, un document..." />
+                    <button type="submit">Rechercher</button>
+                </form>
+            </div>
+            <div class="ellipse"><img src="assets/images/arrondi-hero.svg"></div>
+        </section>
+
+        <section class="popinResults container">
+            <div class="results">
+                <div class="results__left">
+                    <p class="number"><span>82</span> résultats liés à votre recherche</p>
+                    <div>
+                        <article>
+                            <a href="action.html">
+                                <h2>Titre du résultat de <span>test</span></h2>
+                            </a>
+                            <section class="tags">
+                                <div>Tag</div>
+                                <div>Tag</div>
+                                <div>Tag</div>
+                            </section>
+                            <a href="action.html" class="cta">Consulter l’action</a>
+                        </article>
+                        <article>
+                            <a href="action.html">
+                                <h2>Titre du résultat de <span>test</span></h2>
+                            </a>
+                            <section class="tags">
+                                <div>Tag</div>
+                                <div>Tag</div>
+                                <div>Tag</div>
+                            </section>
+                            <a href="action.html" class="cta">Consulter l’action</a>
+                        </article>
+                        <article>
+                            <a href="action.html">
+                                <h2>Titre du résultat de <span>test</span></h2>
+                            </a>
+                            <section class="tags">
+                                <div>Tag</div>
+                                <div>Tag</div>
+                                <div>Tag</div>
+                            </section>
+                            <a href="action.html" class="cta">Consulter l’action</a>
+                        </article>
+                        <article>
+                            <a href="action.html">
+                                <h2>Titre du résultat de <span>test</span></h2>
+                            </a>
+                            <section class="tags">
+                                <div>Tag</div>
+                                <div>Tag</div>
+                                <div>Tag</div>
+                            </section>
+                            <a href="action.html" class="cta">Consulter l’action</a>
+                        </article>
+                    </div>
+                    <a href="index.html" class="btn next3" role="button">Voir tous les résultats</a>
+                </div>
+
+                <aside class="results__right">
+                    <h3>Structures à contacter</h3>
+                    <div>
+                        <article>
+                            <div class="logoBlock">
+                                <img src="assets/images/logo-aract.svg" alt="Logo Aract">
+                            </div>
+                            <a href="structure.html">
+                                <h3>Aract</h3>
+                            </a>
+                            <section class="tags">
+                                <div>Tag</div>
+                                <div>Tag</div>
+                                <div>Tag</div>
+                            </section>
+                            <a href="structure.html" class="cta">Voir la fiche de la structure</a>
+                        </article>
+                        <article>
+                            <div class="logoBlock">
+                                <img src="assets/images/logo-aract.svg" alt="Logo Aract">
+                            </div>
+                            <a href="structure.html">
+                                <h3>Aract</h3>
+                            </a>
+                            <section class="tags">
+                                <div>Tag</div>
+                                <div>Tag</div>
+                                <div>Tag</div>
+                            </section>
+                            <a href="structure.html" class="cta">Voir la fiche de la structure</a>
+                        </article>
+                        <article>
+                            <div class="logoBlock">
+                                <img src="assets/images/logo-aract.svg" alt="Logo Aract">
+                            </div>
+                            <a href="structure.html">
+                                <h3>Aract</h3>
+                            </a>
+                            <section class="tags">
+                                <div>Tag</div>
+                                <div>Tag</div>
+                                <div>Tag</div>
+                            </section>
+                            <a href="structure.html" class="cta">Voir la fiche de la structure</a>
+                        </article>
+                        <article>
+                            <div class="logoBlock">
+                                <img src="assets/images/logo-aract.svg" alt="Logo Aract">
+                            </div>
+                            <a href="structure.html">
+                                <h3>Aract</h3>
+                            </a>
+                            <section class="tags">
+                                <div>Tag</div>
+                                <div>Tag</div>
+                                <div>Tag</div>
+                            </section>
+                            <a href="structure.html" class="cta">Voir la fiche de la structure</a>
+                        </article>
+                    </div>
+                    <div class="arrow arrowResults"></div>
+                </aside>
+            </div>
+        </section>
+
+        <section class="cards container">
+            <div class="cards__title">
+                <h2>Comment bien utiliser le portail ?</h2>
+                <p>Cette plateforme, pensée comme une extension du document PRST, vous offre une navigation simplifiée afin de répondre à toutes vos questions.</p>
+            </div>
+            <div class="cards__list">
+                <a href="" class="card">
+                    <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M27.5002 44.75C17.9889 44.75 10.25 37.0111 10.25 27.5002C10.25 17.9889 17.9889 10.25 27.5002 10.25C37.0111 10.25 44.75 17.9889 44.75 27.5002C44.75 37.0111 37.0111 44.75 27.5002 44.75ZM27.5002 12.9737C19.4907 12.9737 12.9737 19.4907 12.9737 27.5002C12.9737 35.5097 19.4907 42.0263 27.5002 42.0263C35.5097 42.0263 42.0263 35.5097 42.0263 27.5002C42.0263 19.4907 35.5097 12.9737 27.5002 12.9737Z" fill="#252421"/>
+                        <path d="M51.695 53.75C51.3611 53.75 51.0275 53.6291 50.7735 53.3859L37.632 40.8704C37.1227 40.3854 37.1227 39.5991 37.632 39.1138C38.1412 38.6287 38.9669 38.6287 39.4762 39.1138L52.618 51.6293C53.1273 52.1143 53.1273 52.9006 52.618 53.3859C52.3624 53.6291 52.0289 53.75 51.695 53.75Z" fill="#252421"/>
+                    </svg>
+                    <h3>Moteur de recherche</h3>
+                    <p>Cursus ultricies et convallis amet a aliquam. Dolor vestibulum risus sit tristique praesent mattis viverra.</p>
+                    <div class="cta">Faire une recherche</div>
+                </a>
+                <a href="annuaire.html" class="card">
+                    <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.4743 56H49.921C51.451 56 52.6957 54.7384 52.6957 53.1875V10.8125C52.6957 9.2616 51.451 8 49.921 8C48.3251 8 19.5293 8 18.4743 8C16.9442 8 15.6996 9.2616 15.6996 10.8125V14.1875H14.7747C13.2446 14.1875 12 15.4491 12 17C12 18.5509 13.2446 19.8125 14.7747 19.8125H15.6996V23.5625H14.7747C13.2446 23.5625 12 24.8241 12 26.375C12 27.9259 13.2446 29.1875 14.7747 29.1875H15.6996V34.8125H14.7747C13.2446 34.8125 12 36.0741 12 37.625C12 39.1759 13.2446 40.4375 14.7747 40.4375H15.6996V44.1875H14.7747C13.2446 44.1875 12 45.4491 12 47C12 48.5509 13.2446 49.8125 14.7747 49.8125H15.6996V53.1875C15.6996 54.7384 16.9442 56 18.4743 56ZM50.8459 10.8125V53.1875C50.8459 53.7046 50.4311 54.125 49.921 54.125H48.8371C48.9397 53.8317 48.9961 53.5164 48.9961 53.1875V10.8125C48.9961 10.4836 48.9397 10.1683 48.8371 9.875H49.921C50.4311 9.875 50.8459 10.2954 50.8459 10.8125ZM14.7747 17.9375C14.2646 17.9375 13.8498 17.5171 13.8498 17C13.8498 16.4829 14.2646 16.0625 14.7747 16.0625H15.6996V17.9375H14.7747ZM14.7747 27.3125C14.2646 27.3125 13.8498 26.8921 13.8498 26.375C13.8498 25.8579 14.2646 25.4375 14.7747 25.4375H15.6996V27.3125H14.7747ZM14.7747 38.5625C14.2646 38.5625 13.8498 38.1421 13.8498 37.625C13.8498 37.1079 14.2646 36.6875 14.7747 36.6875H15.6996V38.5625H14.7747ZM20.3241 36.6875C19.8132 36.6875 19.3992 37.1072 19.3992 37.625C19.3992 38.1421 18.9844 38.5625 18.4743 38.5625H17.5494V29.1875H18.4743C20.0044 29.1875 21.249 27.9259 21.249 26.375C21.249 25.8572 20.835 25.4375 20.3241 25.4375C19.8132 25.4375 19.3992 25.8572 19.3992 26.375C19.3992 26.8921 18.9844 27.3125 18.4743 27.3125H17.5494V19.8125H18.4743C20.0044 19.8125 21.249 18.5509 21.249 17C21.249 16.4822 20.835 16.0625 20.3241 16.0625C19.8132 16.0625 19.3992 16.4822 19.3992 17C19.3992 17.5171 18.9844 17.9375 18.4743 17.9375H17.5494V10.8125C17.5494 10.2954 17.9642 9.875 18.4743 9.875H46.2213C46.7315 9.875 47.1462 10.2954 47.1462 10.8125V53.1875C47.1462 53.7046 46.7315 54.125 46.2213 54.125H18.4743C17.9642 54.125 17.5494 53.7046 17.5494 53.1875V49.8125H18.4743C20.0044 49.8125 21.249 48.5509 21.249 47C21.249 46.4822 20.835 46.0625 20.3241 46.0625C19.8132 46.0625 19.3992 46.4822 19.3992 47C19.3992 47.5171 18.9844 47.9375 18.4743 47.9375H17.5494V40.4375H18.4743C20.0044 40.4375 21.249 39.1759 21.249 37.625C21.249 37.1072 20.835 36.6875 20.3241 36.6875ZM14.7747 47.9375C14.2646 47.9375 13.8498 47.5171 13.8498 47C13.8498 46.4829 14.2646 46.0625 14.7747 46.0625H15.6996V47.9375H14.7747Z" fill="#252421"/>
+                        <path d="M29.414 37.2791C31.399 39.3886 33.722 41.0341 36.3182 42.1699C37.8481 42.8393 39.6003 42.4745 40.7794 41.222L42.1308 39.7851C43.0927 38.7644 43.0943 37.1103 42.1315 36.0886L40.5292 34.3852H40.5289C39.2373 33.0129 37.0348 33.5622 36.456 35.4069L36.3746 35.6669C33.7486 34.8467 31.7033 32.6733 30.931 29.8835L31.1758 29.7967C32.9122 29.1817 33.4289 26.8415 32.1374 25.4692L30.5348 23.7671C29.5722 22.743 28.0155 22.7458 27.0558 23.7665L25.7027 25.2034C24.5284 26.4511 24.1783 28.3117 24.8109 29.943C25.8799 32.7015 27.4286 35.1697 29.414 37.2791ZM26.8623 26.4361L28.2157 24.9985C28.536 24.6585 29.0536 24.6571 29.3749 24.9992L30.9778 26.7016C31.4086 27.1593 31.235 27.9391 30.6572 28.144L29.6952 28.4846C29.3028 28.6235 29.0693 29.051 29.1504 29.4818C29.9207 33.5704 32.9045 36.7407 36.7526 37.5589C37.1581 37.645 37.5604 37.3969 37.6911 36.98L38.0118 35.9583C38.2046 35.3439 38.9382 35.1595 39.3693 35.6172L40.9719 37.321C41.2922 37.661 41.2935 38.211 40.9716 38.5527L39.6195 39.9903C38.9148 40.7387 37.8641 40.962 36.9429 40.5587C32.1643 38.4679 28.2951 34.3569 26.3274 29.2797C25.9478 28.3009 26.1579 27.1845 26.8623 26.4361Z" fill="#252421"/>
+                    </svg>
+                    <h3>Annuaire</h3>
+                    <p>Cursus ultricies et convallis amet a aliquam. Dolor vestibulum risus sit tristique praesent mattis viverra.</p>
+                    <div class="cta">Consulter l’annuaire</div>
+                </a>
+                <a href="faq.html" class="card">
+                    <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M47.9 16.1001C46.0196 14.196 43.6937 12.7914 41.1331 12.0134C38.5726 11.2355 35.8584 11.109 33.2365 11.6453C30.6147 12.1816 28.1682 13.3637 26.1188 15.0846C24.0693 16.8054 22.4818 19.0106 21.5 21.5001C18.2039 22.8009 15.4285 25.1521 13.6038 28.1898C11.7791 31.2274 11.0068 34.7819 11.4066 38.3028C11.8063 41.8238 13.3558 45.1147 15.8151 47.6659C18.2743 50.2172 21.5061 51.8864 25.01 52.4151C25.8196 52.5341 26.6367 52.5943 27.455 52.5951C30.1163 52.593 32.7352 51.928 35.075 50.6601L39.575 51.8901C40.0213 52.0075 40.4905 52.006 40.9359 51.8856C41.3814 51.7651 41.7875 51.5301 42.1137 51.2038C42.44 50.8775 42.6751 50.4714 42.7955 50.026C42.9159 49.5806 42.9175 49.1113 42.8 48.6651L41.57 44.1651C41.916 43.6309 42.2266 43.0748 42.5 42.5001C44.9923 41.5214 47.2004 39.9353 48.9236 37.8861C50.6468 35.8368 51.8305 33.3893 52.3671 30.7661C52.9037 28.1429 52.7761 25.4272 51.9959 22.8658C51.2158 20.3045 49.8078 17.9788 47.9 16.1001ZM40.64 49.6401C40.5955 49.689 40.5383 49.7246 40.4748 49.7432C40.4113 49.7617 40.3439 49.7624 40.28 49.7451L35.27 48.3951C34.9803 48.3215 34.6733 48.3645 34.415 48.5151C32.5711 49.5801 30.5068 50.2064 28.382 50.3454C26.2571 50.4845 24.1288 50.1327 22.1618 49.3172C20.1948 48.5017 18.4418 47.2444 17.0387 45.6426C15.6356 44.0409 14.62 42.1377 14.0706 40.0805C13.5211 38.0232 13.4525 35.8671 13.8701 33.7791C14.2877 31.691 15.1802 29.7271 16.4787 28.0394C17.7771 26.3518 19.4466 24.9856 21.3578 24.0467C23.269 23.1078 25.3707 22.6214 27.5 22.6251C27.9147 22.6027 28.3303 22.6027 28.745 22.6251C31.0728 22.8263 33.3117 23.6133 35.2534 24.9128C37.1951 26.2123 38.7764 27.9821 39.8499 30.0572C40.9234 32.1324 41.4543 34.4455 41.3931 36.7812C41.332 39.1168 40.6807 41.3989 39.5 43.4151C39.3495 43.6733 39.3064 43.9804 39.38 44.2701L40.73 49.2801C40.7491 49.3426 40.7508 49.4092 40.735 49.4726C40.7191 49.536 40.6863 49.5939 40.64 49.6401ZM50.195 29.7801C49.8448 31.8092 49.0463 33.7346 47.8579 35.416C46.6694 37.0975 45.1209 38.4928 43.325 39.5001C43.6714 37.6896 43.712 35.834 43.445 34.0101C42.8778 30.4683 41.1522 27.2146 38.5384 24.7583C35.9246 22.3019 32.5701 20.7815 29 20.4351C27.4948 20.3091 25.9793 20.4 24.5 20.7051C26.1049 17.883 28.6485 15.713 31.6881 14.5728C34.7278 13.4326 38.0711 13.3943 41.136 14.4647C44.201 15.5352 46.7935 17.6464 48.4625 20.4311C50.1314 23.2158 50.771 26.4975 50.27 29.7051L50.195 29.7801ZM29.375 44.7801C29.3691 45.1496 29.2541 45.5091 29.0446 45.8135C28.835 46.1179 28.5401 46.3535 28.197 46.4908C27.8539 46.6282 27.4779 46.661 27.1162 46.5853C26.7545 46.5096 26.4232 46.3287 26.164 46.0654C25.9047 45.802 25.7291 45.4679 25.6592 45.105C25.5892 44.7421 25.6281 44.3667 25.7708 44.0258C25.9136 43.6849 26.1539 43.3939 26.4615 43.1891C26.7692 42.9844 27.1305 42.8751 27.5 42.8751C27.9973 42.8751 28.4742 43.0726 28.8259 43.4243C29.1775 43.7759 29.375 44.2528 29.375 44.7501V44.7801ZM33.125 32.0301V32.6601C33.1264 33.584 32.8375 34.485 32.2993 35.2359C31.761 35.9868 31.0004 36.5497 30.125 36.8451C29.6909 36.9868 29.3124 37.2616 29.0432 37.6304C28.774 37.9992 28.6277 38.4435 28.625 38.9001V39.5001C28.625 39.7985 28.5065 40.0846 28.2955 40.2956C28.0845 40.5066 27.7984 40.6251 27.5 40.6251C27.2017 40.6251 26.9155 40.5066 26.7045 40.2956C26.4936 40.0846 26.375 39.7985 26.375 39.5001V38.8701C26.3737 37.9462 26.6625 37.0452 27.2008 36.2943C27.7391 35.5434 28.4996 34.9805 29.375 34.6851C29.8091 34.5434 30.1876 34.2686 30.4568 33.8998C30.7261 33.531 30.8724 33.0867 30.875 32.6301V32.0001C30.875 31.105 30.5194 30.2465 29.8865 29.6136C29.2536 28.9807 28.3951 28.6251 27.5 28.6251C26.6049 28.6251 25.7465 28.9807 25.1135 29.6136C24.4806 30.2465 24.125 31.105 24.125 32.0001C24.125 32.2985 24.0065 32.5846 23.7955 32.7956C23.5845 33.0066 23.2984 33.1251 23 33.1251C22.7017 33.1251 22.4155 33.0066 22.2045 32.7956C21.9936 32.5846 21.875 32.2985 21.875 32.0001C21.875 30.5083 22.4677 29.0775 23.5226 28.0226C24.5774 26.9677 26.0082 26.3751 27.5 26.3751C28.9919 26.3751 30.4226 26.9677 31.4775 28.0226C32.5324 29.0775 33.125 30.5083 33.125 32.0001V32.0301Z" fill="#252421"/>
+                    </svg>
+                    <h3>FAQ</h3>
+                    <p>Cursus ultricies et convallis amet a aliquam. Dolor vestibulum risus sit tristique praesent mattis viverra.</p>
+                    <div class="cta">Accéder à la FAQ</div>
+                </a>
+            </div>
+        </section>
+
+        <section class="imgTxt" style="background: #FEFBF5;">
+            <div class="container">
+                <div class="imgTxt__text">
+                    <p class="uptitle">présentation</p>
+                    <h2>Pourquoi ce portail ?</h2>
+                    <p class="highlight">
+                        Pour agir ensemble de façon efficace autour des priorités régionales avec les entreprises, les partenaires institutionnels de la prévention ont ressenti le besoin de communiquer d’une même voix.
+                    </p>
+                    <p>
+                        Cette plateforme permet aux entreprises, dirigeants, encadrants et salariés de trouver les informations, les outils, les aides et les accompagnements possibles dans leur démarche de prévention des risques professionnels visés dans le PRST, car jugés prioritaires. Elle est l’un des moyens mis en œuvre en région Hauts-de-France pour développer, s’approprier et diffuser une culture de prévention commune, nécessaire à l’amélioration des conditions de travail dans les entreprises de notre région.
+                    </p>
+                    <a href="index.html" class="btn next" role="button">En savoir plus</a>
+                </div>
+                <div class="imgTxt__image -withCard">
+                    <img src="assets/images/image1.jpeg" alt="Image" loading="lazy">
+                    <div class="card">
+                        <h3>PRST</h3>
+                        <p>Feuille de route régionale en matière de santé au travail, qui s’inscrit dans le cadre d’un plan national. Le PRST en Hauts-de-France est la conjugaison de 3 ingrédients : <strong>volonté partagée, compréhension commune, méthode concertée.</strong></p>
+                        <a href="" class="cta">Télécharger le PRST 2022</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="keyFigures">
+            <div class="container">
+                <div>
+                    <p class="highlight">
+                        <span class="number" data-count="30"></span>
+                        <span>%</span>
+                    </p>
+                    <p>des accidents du travail concernent les travailleurs qui ont moins d’un an d’ancienneté, notamment les jeunes travailleurs et les intérimaires.</p>
+                </div>
+                <div>
+                    <p class="highlight">
+                        <span class="number" data-count="60000"></span>
+                    </p>
+                    <p>accidents du travail et 5100 maladies professionnelles reconnues dans la région en 2019.</p>
+                </div>
+                <div>
+                    <p class="highlight">
+                        <span>+</span>
+                        <span class="number" data-count="160000"></span>
+                    </p>
+                    <p>personnes en emploi qui apprennent chaque année qu’elles ont un cancer.</p>
+                </div>
+                <div>
+                    <p class="highlight">
+                        <span class="number" data-count="8"></span>
+                        <span>/10</span>
+                    </p>
+                    <p>maladies professionnelles sont liées aux troubles musculo squelettiques.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="firstColumn">
+                <div class="firstColumn__images">
+                   <a href="index.html">
+                       <img src="assets/images/logo.svg" alt="Logo PRST">
+                   </a>
+                   <a href="" target="_blank">
+                       <img src="assets/images/logo-dreets.svg" alt="Logo DREETS">
+                   </a>
+                </div>
+                <p>At nunc si ad aliquem bene nummatum tumentemque ideo honestus advena salutatum introieris, primitus tamquam exoptatus suscipieris et interrogat.</p>
+                <ul class="firstColumn__network">
+                    <a href="" target="_blank">
+                        <img src="assets/images/rs-linkedin.svg" alt="Linkedin">
+                    </a>
+                    <a href="" target="_blank">
+                        <img src="assets/images/rs-fb.svg" alt="Facebook">
+                    </a>
+                </ul>
+            </div>
+            <div class="secondColumn">
+                <ul class="secondColumn__menu">
+                    <li><a href="annuaire.html">Annuaire</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="presentation.html">Présentation</a></li>
+                    <li>
+                        <a href="" class="btn download" role="button">Télécharger le PRST 2022</a>
+                    </li>
+                </ul>
+                <ul class="secondColumn__menu">
+                    <li class="contact">Contact administrateur</li>
+                    <li><a href="rgpd.html">RGPD</a></li>
+                    <li><a href="mentions.html">Mentions légales</a></li>
+                    <li><a href="">Plan du site</a></li>
+                </ul>
+            </div>
+
+            <!-- POP-IN CONTACT ADMIN + OVERLAY -->
+            <section class="popinContact">
+                <div class="popinContact__text">
+                    <div class="introduction">
+                        <button class="closeContact secondary">Fermer</button>
+                        <h2>Vous avez rencontré une difficulté lors de votre visite sur la plateforme ? Vous avez vu une coquille dans un texte ?</h2>
+                        <p>Nous sommes ouverts à toute proposition d’amélioration ! Indiquez-nous vos coordonnées afin que nous puissions vous apporter une réponse.</p>
+                    </div>
+                    <form>
+                        <div class="gfield">
+                            <label>Message <span class="asterisk">*</span></label>
+                            <textarea placeholder="Je note mon message ici..."></textarea>
+                            <span>
+                                Le champ « Message » est mis à disposition pour détailler votre demande, mais il ne doit pas contenir de données sensibles à caractère personnel. Consultez le site de la CNIL pour en savoir plus sur les données sensibles à caractère personnel.
+                                <br><a href="https://www.cnil.fr/fr/definition/donnee-sensible" target="_blank">https://www.cnil.fr/fr/definition/donnee-sensible</a>
+                            </span>
+                        </div>
+                        <div class="gfield">
+                            <label>Prénom <span class="asterisk">*</span></label>
+                            <input placeholder="John"></input>
+                        </div>
+                        <div class="gfield">
+                            <label>Nom <span class="asterisk">*</span></label>
+                            <input placeholder="Doe"></input>
+                        </div>
+                        <div class="gfield">
+                            <label>E-mail <span class="asterisk">*</span></label>
+                            <input type="email" placeholder="john.doe@google.com"></input>
+                        </div>
+                        <div class="ginput_container_consent">
+                            <input type="checkbox">
+                            <label>En soumettant ce formulaire, j’accepte que les informations saisies soient utilisées pour permettre de me recontacter, répondre à ma demande.</label>
+                        </div>
+                        <div class="gform_footer">
+                            <input type="button" value="Envoyer ma demande">
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section class="popinOverlayContact"></section>
+            <!-- POP-IN CONTACT ADMIN + OVERLAY -->
+
+            <div class="backToTop"></div>
+        </div>
+        <div id="overlay" class="overlay"></div>
+   </footer>
+    
+</body>
+</html>

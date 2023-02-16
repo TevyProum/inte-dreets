@@ -1,0 +1,83 @@
+/* START HERO.SCSS */
+.hero {
+    position: relative;
+    background: $yellow900;
+    display: flex;
+    align-items: center;
+    margin-top: -116px;
+    overflow: hidden;
+
+    @media #{$laptop} {
+        margin-top: -188px;
+    }
+
+    .ellipse {
+        position: absolute;
+        width: 103%;
+        bottom: -6px;
+        left: -6px;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+        }
+    }
+
+    .container {
+        padding: 140px 16px 74px 16px;
+        margin: 0 auto;
+
+        @media #{$laptop} {
+            padding: 188px 16px 74px 16px;
+        }
+    }
+
+    &__overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1000;
+        background-color: rgba(63, 60, 55, 0.6);
+        transition: opacity 0.2s ease-in-out;
+        pointer-events: none;
+        opacity: 0;
+
+        &.opacity {
+            opacity: 1;
+        }
+    }
+
+    &__text {
+        text-align: center;
+        max-width: 922px;
+        margin: auto;
+
+        p {
+            font-size: 18px;
+            line-height: 150%;
+        }
+    }
+
+    .searchBar {
+        margin: 56px auto 0 auto;
+    }
+
+    .highlight {
+        position: relative;
+        z-index: 1001;
+    }
+
+    .presentation & {
+        h1 {
+            margin: 32px 0;
+        }
+
+        .container {
+            padding: 188px 16px 120px 16px;
+        }
+    }
+}
+
+/* END HERO.SCSS */

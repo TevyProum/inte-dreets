@@ -1,0 +1,102 @@
+/* START TABS.SCSS */
+
+#tabs {
+    height: 56px;
+    
+    &.height {
+        height: 112px;
+    }
+
+    &.heightMobile {
+        height: 104.5px;
+    }
+}
+
+.tabs {
+    display: flex;
+    gap: 24px;
+    background: $yellow0;
+    border-radius: 80px;
+    padding: 8px;
+    width: fit-content;
+
+    div {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 24px;
+        margin: 0!important;
+        border-radius: 48px;
+        background-color: $white;
+        transition: background-color 0.3s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $yellow100;
+        }
+
+        &.active {
+            background-color: $yellow700;
+        }
+
+        &[data-name='presentation']::before {
+            content: url('../../assets/images/tabs-presentation.svg');
+        }
+
+        &[data-name='programme']::before {
+            content: url('../../assets/images/tabs-objectif.svg');
+        }
+
+        &[data-name='ressources']::before {
+            content: url('../../assets/images/tabs-ressources.svg')
+        }
+
+        &[data-name='axes']::before {
+            content: url('../../assets/images/tabs-podium.svg');
+        }
+
+        &[data-name='portail']::before {
+            content: url('../../assets/images/tabs-web.svg');
+        }
+
+        &[data-name='gouvernance']::before {
+            content: url('../../assets/images/tabs-gouvernance.svg')
+        }
+
+        &[data-name='action']::before {
+            content: url('../../assets/images/tabs-action.svg')
+        }
+    }
+
+    &.fixed {
+        top: 8px;
+        position: fixed;
+        width: fit-content;
+        z-index: 997;
+    }
+}
+
+.tabsMobile {
+    width: 100%;
+
+    @media #{$laptop} {
+        display: none;
+    }
+
+    &.fixedMobile {
+        top: 8px;
+        position: fixed;
+        z-index: 997;
+        width: calc(100% - 32px);
+    }
+}
+
+.tab-content {
+    display: none;
+
+    &.current {
+        display: block;
+    }
+}
+
+/* END TABS.SCSS */

@@ -1,0 +1,416 @@
+/* START COMMON.SCSS */
+
+body {
+    font-family: 'Marianne';
+    color: $black;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+// Text
+a {
+    color: $black;
+    font-weight: 500;
+    text-decoration: none;
+
+    &.underline {
+        text-decoration: underline;
+    }
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 32px;
+
+    @media #{$laptop} {
+        font-size: 48px;
+        line-height: 110%;
+    }
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 36px;
+    margin-bottom: 32px;
+
+    @media #{$laptop} {
+        font-size: 32px;
+        line-height: 40px;
+    }
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 16px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 150%;
+
+    &.highlight {
+        font-weight: 500;
+        font-size: 18px;
+    }
+}
+
+.uptitle {
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $yellow900;
+    margin-bottom: 16px;
+}
+
+strong {
+    font-weight: 700
+}
+
+// Containers
+.container {
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 16px;
+
+    @media #{$desktop} {
+        padding: 0 120px;
+    }
+}
+
+hr {
+    height: 1px;
+    width: 100%;
+    background: $grey700;
+}
+
+// Puces 
+ul:not(.secondColumn__menu) {
+    li {
+        margin-bottom: 16px;
+        position: relative;
+        padding-left: 24px;
+    
+        &:last-child {
+            margin-bottom: 0;
+        }
+    
+        &::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: $yellow900;
+            border-radius: 50%;
+            position: absolute;
+            top: 10px;
+            left: 0;
+        }
+    }
+}
+
+// Forms
+input {
+    background: $white;
+    border: 1px solid $white;
+    box-shadow: 0px 2px 24px rgba(27, 19, 0, 0.08);
+    border-radius: 12px;
+    padding: 14px 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: box-shadow 0.3s ease-in-out;
+
+    &:hover {
+        box-shadow: 0px 28px 48px rgba(27, 19, 0, 0.1);
+    }
+
+    &:focus {
+        border: 1px solid $grey100;
+        box-shadow: 0px 28px 48px rgba(27, 19, 0, 0.1);
+    }
+
+    &::placeholder {
+        color: $grey500;
+    }
+}
+
+.dropdown {
+    position: relative;
+
+    &::after {
+        content: url('../../assets/images/down.svg');
+        position: absolute;
+        right: 16px;
+        top: 14px;
+        pointer-events: none
+    }
+
+    select {
+        @extend input;
+        width: 100%;    
+    
+        &:focus {
+            border: none;
+            box-shadow: 0px 2px 24px rgba(27, 19, 0, 0.08);
+        }
+
+        option {
+            &:disabled {
+                color: $grey500
+            }
+        }
+    }
+}
+
+.filters {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    @media #{$tablet} {
+        flex-direction: row;
+        gap: 48px;
+    }
+
+    .filter {
+        width: 100%;
+
+        .dropdown {
+            margin-top: 8px;
+        }
+    }
+}
+
+.reinit {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    &::after {
+        content: url('../../assets/images/filter.svg');
+        height: 20px
+    }
+}
+
+textarea {
+    @extend input;
+    width: 100%;
+    height: 168px;
+}
+
+.searchBar {
+    position: relative;
+    max-width: 550px;
+
+    @media #{$large-phone} {
+        height: 52px;
+    }
+
+    input {
+        padding-left: 56px;
+
+        @media #{$large-phone} {
+            height: 100%;
+            padding: 6px 6px 6px 56px;
+        }
+    }
+
+    &::before {
+        content: url('../../assets/images/searchbar.svg');
+        position: absolute;
+        top: 16px;
+        left: 18px;
+        pointer-events: none;
+    }
+
+    button {
+        position: relative;
+        justify-content: center;
+        width: 100%;
+        margin-top: 16px;
+
+        @media #{$large-phone} {
+            position: absolute;
+            top: 4px;
+            right: 6px;
+            width: initial;
+            margin-top: initial;
+        }
+    }
+}
+
+.gfield_error {
+    & [aria-invalid="true"] {
+        border: 1px solid $red;
+    }
+
+    .ginput_container {
+        position: relative;
+
+        &::after {
+            content: url('../../assets/images/wrong.svg');
+            position: absolute;
+            top: 14px;
+            right: 16px;
+        }
+    }
+
+    .validation_message {
+        color: $red;
+        margin-top: 6px;
+    }
+}
+
+// Card
+.card {
+    background: $white;
+    border: 1px solid $white;
+    box-shadow: 0px 2px 24px rgba(27, 19, 0, 0.08);
+    border-radius: 16px;
+    padding: 32px;
+    transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+    svg {
+        path {
+            transition: fill 0.3s ease-in-out;
+        }
+    }
+
+    &:hover {
+        border: 1px solid $yellow500;
+        box-shadow: 0px 28px 48px rgba(27, 19, 0, 0.1);
+
+        svg {
+            path {
+                fill: $yellow500;
+            }
+        }
+    }
+}
+
+// Tag
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 32px 0;
+
+    div {
+        background: $white;
+        border: 1px solid $yellow500;
+        border-radius: 50px;
+        padding: 4px 12px;
+        width: fit-content;
+    }
+}
+
+// Pagination
+.pagination {
+    display: flex;
+    gap: 8px;
+
+    .page-numbers {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        background-color: $yellow0;
+        transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+        &.current {
+            background-color: $yellow700;
+            box-shadow: 0px 2px 24px rgba(27, 19, 0, 0.08);
+        }
+
+        &:hover {
+            background-color: $yellow100;
+            box-shadow: 0px 2px 24px rgba(27, 19, 0, 0.08);
+        }
+    }
+
+    .next {
+        width: 48px;
+        background: $yellow700;
+
+        &::before {
+            content: url('../../assets/images/arrow-next.svg');
+            position: absolute;
+        }
+    }
+
+    .prev {
+        @extend .next;
+
+        &::before {
+            transform: rotate(180deg);
+        }
+    }
+
+    .disabled {
+        background: $grey300;
+
+        &::before {
+            filter: brightness(0) invert(1);
+        }
+
+        &:hover {
+            background: $grey300;
+        }
+    }
+}
+
+// Dots 
+.owl-dots {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 16px;
+
+    .owl-dot {
+        width: 8px;
+        height: 8px;
+        background: $yellow100!important;
+        border-radius: 24px;
+
+        &.active {
+            background: $yellow900!important;
+        }
+    }
+}
+
+// Overflow (mobile)
+.noscroll {
+    overflow: hidden;
+
+    // Passage tablette paysage à portrait ?
+    // @media #{$laptop} {
+    //     overflow: initial;
+    // }
+}
+
+// Overlay (mobile)
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 998;
+    background-color: rgba(63, 60, 55, 0.6);
+    transition: opacity 0.2s ease-in-out;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.opacity {
+    opacity: 1;
+}
+
+/* END COMMON.SCSS */

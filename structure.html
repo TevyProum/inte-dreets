@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/scss/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="styles/owlcarousel/owl.theme.default.min.css">
+    <title>Aract - DREETS</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" defer></script>
+    <script src="js/menu.js" defer></script>
+    <script src="js/owl.carousel.min.js" defer></script>
+    <script src="js/slider.js" defer></script>
+    <script src="js/tabs.js" defer></script>
+    <script src="js/popin.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <!-- "headerImages" => seulement sur mobile -->
+        <div class="headerImages">
+            <a href="index.html">
+                <img src="assets/images/logo.svg" alt="Logo PRST">
+            </a>
+            <div>
+                <button id="searchIcon"></button>
+                <button id="burger"></button>
+            </div>
+        </div>
+        <!-- "headerImages" => seulement sur mobile -->
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.svg" alt="Logo PRST">
+            </a>
+            <form class="searchBar">
+                <input type="search" placeholder="Rechercher une structure..." />
+                <button type="submit">Rechercher</button>
+            </form>
+            <nav>
+                <a href="annuaire.html">Annuaire</a>
+                <a href="faq.html">FAQ</a>
+                <a href="presentation.html">Présentation</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="template container">
+            <div class="template__content">
+                <section class="title">
+                    <h1>Aract</h1>
+                    <section class="tags">
+                        <div>Accompagnement</div>
+                        <div>Prévention</div>
+                        <div>Risque routier</div>
+                    </section>
+                </section>
+    
+                <aside>
+                    <div class="logoBlock">
+                        <img src="assets/images/logo-aract.svg" alt="Logo Aract">
+                    </div>
+                    <div class="textBlock">
+                        <p>
+                            <strong>Tél :</strong> +00 00 00 00 00
+                        </p>
+                        <p>
+                            <strong>Mail :</strong> hautsdefrance.aract@anact.fr
+                        </p>
+                        <p>
+                            <strong>Adresse :</strong> 00 Nom / Type de rue Code Postal - Ville
+                        </p>
+                        <a href="index.html" class="btn secondary" role="button" target="_blank">Consulter le site internet</a>
+                    </div>
+                </aside>
+
+                <div id="tabs"></div>
+        
+                <section class="tabs desktop">
+                    <div data-tab="tab-1" data-name="presentation" class="tab-filter active current">
+                        <a href="#tabs">Présentation</a>
+                    </div>
+                    <div data-tab="tab-2" data-name="action" class="tab-filter">
+                        <a href="#tabs">Actions (4)</a>
+                    </div>
+                </section>
+
+                <section class="tabsMobile dropdown">
+                    <select class="">
+                        <option value="tab-1">Présentation</option>
+                        <option value="tab-2">Actions (4)</option>
+                    </select>
+                </section>
+
+                <section class="tab-content current" id="tab-1">
+                    <h2>Notre mission</h2>
+                    <p class="highlight">
+                        L’Association régionale pour l’amélioration des conditions de travail (Aract) a pour vocation d’améliorer les conditions de travail des salariés, l’efficacité des entreprises et des organisations, de promouvoir des démarches d’innovation sociale, en agissant notamment sur l’organisation du travail et les relations professionnelles.
+                    </p>
+                    <p>
+                        Pour cela, l’Aract conçoit et diffuse des méthodes et des outils éprouvés sur le terrain dans un objectif partagé : la qualité de vie au travail est source de performance.
+                    </p>
+        
+                    <h2>Nos services</h2>
+                    <p>
+                        L'Aract a une mission d'innovation sociale en matière de conditions de travail :
+                    </p>
+                    <ul>
+                        <li>
+                            Développer et proposer, à partir des retours d'expérience de projets pilotes, des méthodes et outils éprouvés, permettant aux salariés et aux employeurs d'améliorer les conditions de travail en agissant avec efficacité sur l'organisation du travail.
+                        </li>
+                        <li>
+                            Diffuser ces méthodes et outils dans les entreprises du secteur privé et dans le secteur public, en informant, formant et accompagnant, dans les domaines de la prévention des risques professionnels, de l'organisation du travail et du dialogue social.
+                        </li>
+                        <li>
+                            Mener une activité de veille et d’étude sur les enjeux et les risques liés aux conditions de travail afin d'aider à la prise de décision les pouvoirs publics et les acteurs socio-économiques, dont les partenaires sociaux.
+                        </li>
+                    </ul>
+        
+                    <h2>Qui sommes -nous ?</h2>
+                    <p>
+                        Le Conseil d’administration de l’Aract est composé des représentants des organisations régionales d’employeurs (Medef, CPME, U2P) et de salariés (CFDT, CFE-CGC, CFTC, CGT, FO). Il adopte le programme d’activité annuel et en suit la réalisation.
+                        <br>L’Aract est membre du réseau Anact-Aract. Créée en 1973, l’Agence nationale pour l’amélioration des conditions de travail (Anact), est un établissement public sous tutelle du ministère en charge du travail.
+                        <br>L’équipe de l’Aract est composée d’une vingtaine de personnes spécialistes de l’ergonomie, de la psychologie du travail, du développement économique, de la sociologie, des ressources humaines, de la gestion, de la communication... Avec une expérience dans les secteurs privé et public.
+                    </p>
+                    
+                    <h2>Les structures associées</h2>
+                    <p>
+                        Post hoc impie perpetratum quod in aliis quoque iam timebatur, tamquam licentia crudelitati indulta per suspicionum nebulas.
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>Nom de la structure :</strong> hoc impie perpetratum quod in aliis quoque iam timebatur, tamquam licentia crudelitati indulta per suspicionum nebulas.
+                            <a href="index.html" class="cta" target="_blank">Voir le site internet</a>
+                        </li>
+                        <li>
+                            <strong>Nom de la structure :</strong> hoc impie perpetratum quod in aliis quoque iam timebatur, tamquam licentia crudelitati indulta per suspicionum nebulas.
+                            <a href="index.html" class="cta" target="_blank">Voir le site internet</a>
+                        </li>
+                        <li>
+                            <strong>Nom de la structure :</strong> hoc impie perpetratum quod in aliis quoque iam timebatur, tamquam licentia crudelitati indulta per suspicionum nebulas.
+                            <a href="index.html" class="cta" target="_blank">Voir le site internet</a>
+                        </li>
+                    </ul>
+                </section>
+    
+                <section class="tab-content" id="tab-2">
+                    <article>
+                        <h2>Titre de l’action</h2>
+                        <p>
+                            Post hoc impie perpetratum quod in aliis quoque iam timebatur, tamquam licentia crudelitati indulta per suspicionum nebulas aestimati quidam noxii damnabantur. quorum pars necati, alii puniti bonorum multatione actique laribus suis extorres nullo sibi relicto praeter querelas et lacrimas, stipe conlaticia victitabant, et civili iustoque imperio ad voluntatem converso cruentam, claudebantur opulentae domus et clarae.
+                        </p>
+                        <a href="action.html" class="cta">Consulter l’action</a>
+                    </article>
+                    <article>
+                        <h2>Titre de l’action</h2>
+                        <p>
+                            Post hoc impie perpetratum quod in aliis quoque iam timebatur, tamquam licentia crudelitati indulta per suspicionum nebulas aestimati quidam noxii damnabantur. quorum pars necati, alii puniti bonorum multatione actique laribus suis extorres nullo sibi relicto praeter querelas et lacrimas, stipe conlaticia victitabant, et civili iustoque imperio ad voluntatem converso cruentam, claudebantur opulentae domus et clarae.
+                        </p>
+                        <a href="action.html" class="cta">Consulter l’action</a>
+                    </article>
+                    <article>
+                        <h2>Titre de l’action</h2>
+                        <p>
+                            Post hoc impie perpetratum quod in aliis quoque iam timebatur, tamquam licentia crudelitati indulta per suspicionum nebulas aestimati quidam noxii damnabantur. quorum pars necati, alii puniti bonorum multatione actique laribus suis extorres nullo sibi relicto praeter querelas et lacrimas, stipe conlaticia victitabant, et civili iustoque imperio ad voluntatem converso cruentam, claudebantur opulentae domus et clarae.
+                        </p>
+                        <a href="action.html" class="cta">Consulter l’action</a>
+                    </article>
+                    <article>
+                        <h2>Titre de l’action</h2>
+                        <p>
+                            Post hoc impie perpetratum quod in aliis quoque iam timebatur, tamquam licentia crudelitati indulta per suspicionum nebulas aestimati quidam noxii damnabantur. quorum pars necati, alii puniti bonorum multatione actique laribus suis extorres nullo sibi relicto praeter querelas et lacrimas, stipe conlaticia victitabant, et civili iustoque imperio ad voluntatem converso cruentam, claudebantur opulentae domus et clarae.
+                        </p>
+                        <a href="action.html" class="cta">Consulter l’action</a>
+                    </article>
+                </section>
+
+                <section class="suggestion">
+                    <div class="suggestion__text">
+                        <h3>Ces informations vous ont-elles été utiles ?</h3>
+                        <p>Nous avons besoin de votre avis afin que nous nous améliorions de façon continue.</p>
+                    </div>
+                    <div class="suggestion__icons">
+                        <button class="secondary yes">Oui</button>
+                        <button class="secondary no">Non</button>
+                    </div>
+                </section>
+
+                <!-- POP-IN SUGGESTION + OVERLAY -->
+                <section class="popin">
+                    <div class="popin__text">
+                        <div class="introduction">
+                            <button class="close secondary">Fermer</button>
+                            <h2>Nous sommes navrés si ces informations ne vous ont pas été utiles...</h2>
+                            <p>Nous sommes ouverts à toute proposition afin d’améliorer cette plateforme faite pour vous !</p>
+                        </div>
+                        <form>
+                            <div class="gfield">
+                                <label>Suggestion d’amélioration</label>
+                                <textarea placeholder="Je note ma suggestion ici..."></textarea>
+                            </div>
+                            <div class="gform_footer">
+                                <input type="button" value="Envoyer ma demande">
+                            </div>
+                        </form>
+                    </div>
+                </section>
+                <section class="popinOverlay"></section>
+                <!-- POP-IN SUGGESTION + OVERLAY -->
+            </div>
+        </section>
+
+        <section class="sliderCards container">
+            <div class="sliderCards__title">
+                <h3>Ces structures pourraient vous intéresser</h3>
+                <div class="arrow"></div>
+            </div>
+            <div class="sliderCards__list owl-carousel">
+                <div class="card">
+                    <h3>Nom de la structure</h3>
+                    <section class="tags">
+                        <div>Tag</div>
+                        <div>Tag</div>
+                        <div>Tag</div>
+                    </section>
+                    <p>
+                        <strong>Tél :</strong> +00 00 00 00 00<br>
+                        <strong>Mail :</strong> <a href="mailto:contact@mail.com">contact@mail.com</a><br>
+                        <strong>Site internet :</strong> <a href="" target="_blank" class="underline">nomdusite.com</a>
+                    </p>
+                    <a href="structure.html" class="cta">Voir la fiche de la structure</a>
+                </div>
+                <div class="card">
+                    <h3>Nom de la structure</h3>
+                    <section class="tags">
+                        <div>Tag</div>
+                        <div>Tag</div>
+                        <div>Tag</div>
+                    </section>
+                    <p>
+                        <strong>Tél :</strong> +00 00 00 00 00<br>
+                        <strong>Mail :</strong> <a href="mailto:contact@mail.com">contact@mail.com</a><br>
+                        <strong>Site internet :</strong> <a href="" target="_blank" class="underline">nomdusite.com</a>
+                    </p>
+                    <a href="structure.html" class="cta">Voir la fiche de la structure</a>
+                </div>
+                <div class="card">
+                    <h3>Nom de la structure</h3>
+                    <section class="tags">
+                        <div>Tag</div>
+                        <div>Tag</div>
+                        <div>Tag</div>
+                    </section>
+                    <p>
+                        <strong>Tél :</strong> +00 00 00 00 00<br>
+                        <strong>Mail :</strong> <a href="mailto:contact@mail.com">contact@mail.com</a><br>
+                        <strong>Site internet :</strong> <a href="" target="_blank" class="underline">nomdusite.com</a>
+                    </p>
+                    <a href="structure.html" class="cta">Voir la fiche de la structure</a>
+                </div>
+                <div class="card">
+                    <h3>Nom de la structure</h3>
+                    <section class="tags">
+                        <div>Tag</div>
+                        <div>Tag</div>
+                        <div>Tag</div>
+                    </section>
+                    <p>
+                        <strong>Tél :</strong> +00 00 00 00 00<br>
+                        <strong>Mail :</strong> <a href="mailto:contact@mail.com">contact@mail.com</a><br>
+                        <strong>Site internet :</strong> <a href="" target="_blank" class="underline">nomdusite.com</a>
+                    </p>
+                    <a href="structure.html" class="cta">Voir la fiche de la structure</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="redirection">
+            <div class="container">
+                <div class="redirection__text">
+                    <p class="uptitle">FAQ</p>
+                    <h3>Vous avez besoin d’aide ?</h3>
+                    <p>Vous n'avez pas trouvé l'information que vous cherchez ? Consultez la FAQ pour vous guider.</p>
+                    <a href="faq.html" class="btn" role="button">Accéder à la FAQ</a>
+                </div>
+                <div class="redirection__image">
+                    <img src="assets/images/image2.jpeg" alt="" loading="lazy">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="firstColumn">
+                <div class="firstColumn__images">
+                   <a href="index.html">
+                       <img src="assets/images/logo.svg" alt="Logo PRST">
+                   </a>
+                   <a href="" target="_blank">
+                       <img src="assets/images/logo-dreets.svg" alt="Logo DREETS">
+                   </a>
+                </div>
+                <p>At nunc si ad aliquem bene nummatum tumentemque ideo honestus advena salutatum introieris, primitus tamquam exoptatus suscipieris et interrogat.</p>
+                <ul class="firstColumn__network">
+                    <a href="" target="_blank">
+                        <img src="assets/images/rs-linkedin.svg" alt="Linkedin">
+                    </a>
+                    <a href="" target="_blank">
+                        <img src="assets/images/rs-fb.svg" alt="Facebook">
+                    </a>
+                </ul>
+            </div>
+            <div class="secondColumn">
+                <ul class="secondColumn__menu">
+                    <li><a href="annuaire.html">Annuaire</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="presentation.html">Présentation</a></li>
+                    <li>
+                        <a href="" class="btn download" role="button">Télécharger le PRST 2022</a>
+                    </li>
+                </ul>
+                <ul class="secondColumn__menu">
+                    <li class="contact">Contact administrateur</li>
+                    <li><a href="rgpd.html">RGPD</a></li>
+                    <li><a href="mentions.html">Mentions légales</a></li>
+                    <li><a href="">Plan du site</a></li>
+                </ul>
+            </div>
+
+            <!-- POP-IN CONTACT ADMIN + OVERLAY -->
+            <section class="popinContact">
+                <div class="popinContact__text">
+                    <div class="introduction">
+                        <button class="closeContact secondary">Fermer</button>
+                        <h2>Vous avez rencontré une difficulté lors de votre visite sur la plateforme ? Vous avez vu une coquille dans un texte ?</h2>
+                        <p>Nous sommes ouverts à toute proposition d’amélioration ! Indiquez-nous vos coordonnées afin que nous puissions vous apporter une réponse.</p>
+                    </div>
+                    <form>
+                        <div class="gfield">
+                            <label>Message <span class="asterisk">*</span></label>
+                            <textarea placeholder="Je note mon message ici..."></textarea>
+                            <span>
+                                Le champ « Message » est mis à disposition pour détailler votre demande, mais il ne doit pas contenir de données sensibles à caractère personnel. Consultez le site de la CNIL pour en savoir plus sur les données sensibles à caractère personnel.
+                                <br><a href="https://www.cnil.fr/fr/definition/donnee-sensible" target="_blank">https://www.cnil.fr/fr/definition/donnee-sensible</a>
+                            </span>
+                        </div>
+                        <div class="gfield">
+                            <label>Prénom <span class="asterisk">*</span></label>
+                            <input placeholder="John"></input>
+                        </div>
+                        <div class="gfield">
+                            <label>Nom <span class="asterisk">*</span></label>
+                            <input placeholder="Doe"></input>
+                        </div>
+                        <div class="gfield">
+                            <label>E-mail <span class="asterisk">*</span></label>
+                            <input type="email" placeholder="john.doe@google.com"></input>
+                        </div>
+                        <div class="ginput_container_consent">
+                            <input type="checkbox">
+                            <label>En soumettant ce formulaire, j’accepte que les informations saisies soient utilisées pour permettre de me recontacter, répondre à ma demande.</label>
+                        </div>
+                        <div class="gform_footer">
+                            <input type="button" value="Envoyer ma demande">
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section class="popinOverlayContact"></section>
+            <!-- POP-IN CONTACT ADMIN + OVERLAY -->
+
+            <div class="backToTop"></div>
+        </div>
+        <div id="overlay" class="overlay"></div>
+   </footer>
+    
+</body>
+</html>

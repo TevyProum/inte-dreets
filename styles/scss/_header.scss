@@ -1,0 +1,154 @@
+/* START HEADER.SCSS */
+
+header {
+    height: 116px;
+
+    @media #{$laptop} {
+        height: initial;
+    }
+
+    .headerImages {
+        position: relative;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 24px 16px;
+
+        @media #{$laptop} {
+            display: none;
+        }
+
+        // .noscroll & {
+        //     z-index: 9999;
+        // }
+
+        div {
+            display: flex;
+            gap: 24px;
+
+            button {
+                width: 52px;
+                height: 52px;
+            }
+
+            #searchIcon {
+                display: none;
+
+                content: '';
+                background-image: url('../../assets/images/search-mobile.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                box-shadow: 0px 2px 20px rgba(27, 19, 0, 0.04);
+                border-radius: 16px;
+
+                .noscroll &.display {
+                    display: block;
+
+                    @media #{$laptop} {
+                        display: none;
+                    }
+                }
+            }
+
+            #burger {
+                content: '';
+                background: url('../../assets/images/burger-open.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                box-shadow: none;
+
+                &.closed {
+                    content: '';
+                    background: url('../../assets/images/burger-close.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+                
+                @media #{$laptop} { 
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .container {
+        display: none;
+        padding: 24px 16px;
+        background: white;
+        z-index: 999;
+        position: fixed;
+        width: 100%;
+        top: 0;
+
+        @media #{$laptop} {
+            display: flex!important;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            background: none;
+            padding: 32px 120px;
+            margin-bottom: 56px;
+            z-index: 1;
+        }
+
+        .logo {
+            display: none;
+
+            @media #{$laptop} {
+                display: block;
+            }
+        }
+
+        form {
+            display: none;
+
+            @media #{$laptop} {
+                display: flex;
+                flex-basis: 40%;
+            }
+
+            &.display {
+                display: block;
+                margin-top: 108px;
+            }
+
+            &.hidden {
+                @media #{$laptop} {
+                    display: none;
+                }
+            }
+        }
+    
+        nav {
+            display: none;
+            flex-direction: column;
+            padding: 116px 8px 16px 8px;
+            gap: 48px;
+    
+            @media #{$laptop} {
+                display: flex;
+                flex-direction: row;
+                padding: 0;
+                gap: 48px;
+            }
+
+            &.display {
+                display: flex;
+            }
+
+            a {
+                font-weight: 400;
+                color: black;
+                opacity: 0.65;
+                transition: opacity 0.3s ease-in-out;
+    
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+/* END HEADER.SCSS */

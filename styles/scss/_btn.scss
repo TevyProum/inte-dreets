@@ -1,0 +1,166 @@
+/* START BTN.SCSS */
+
+.btn, input[type="button"], button {
+    font-family: 'Marianne';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    background-color: $yellow700;
+    border-radius: 8px;
+    border: none;
+    padding: 10px 16px;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        background: $yellow500;
+        box-shadow: 0px 2px 20px rgba(27, 19, 0, 0.04);
+    }
+
+    &:focus {
+        background: $yellow700;
+        box-shadow: 0px 0px 0px 2px $white;
+    }
+
+    &:active {
+        background: $yellow300;
+        box-shadow: 0px 2px 20px rgba(27, 19, 0, 0.04);
+    }
+
+    &.secondary {
+        background-color: $white;
+        border: 1px solid $yellow900;
+        transition: background-color 0.3s ease-in-out;
+
+        &:hover {
+            background-color: $yellow100;        
+        }
+
+        &:focus {
+            background-color: $yellow100;        
+        }
+
+        &:active {
+            background-color: $yellow300;        
+        }
+    }
+
+    &.download {
+        align-items: center;
+        gap: 8px;
+        
+        &::after {
+            content: url('../../assets/images/download.svg');
+            height: 20px;
+        }
+    }
+
+    &.download2 {
+        @extend .btn.download;
+        
+        &::after {
+            content: url('../../assets/images/download3.svg');
+        }
+    }
+
+    &.next {
+        align-items: center;
+        gap: 13px;
+
+        &::after {
+            content: url('../../assets/images/arrow-next.svg');
+            height: 20px;
+        }
+    }
+
+    &.next2 {
+        @extend .btn.next;
+
+        &::after {
+            content: url('../../assets/images/arrow-next2.svg');
+        }
+    }
+
+    &.next3 {
+        align-items: center;
+        gap: 12px;
+
+        &::after {
+            content: url('../../assets/images/cta.svg');
+            height: 20px;
+        }
+    }
+
+    &.watch {
+        align-items: center;
+        gap: 9px;
+
+        &::after {
+            content: url('../../assets/images/cta-watch.svg');
+            height: 20px;
+        }
+    }
+}
+
+.cta {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    transition: gap 0.4s ease-in-out;
+    text-decoration: none;
+    width: fit-content;
+    margin-top: 16px;
+
+    &::after {
+        content: url('../../assets/images/cta.svg');
+        height: 16px;
+    }
+
+    &:hover {
+        gap: 20px;
+    }
+}
+
+.arrow {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+
+    button {
+        height: fit-content;
+        padding: 12px 16px;
+
+        &:focus {
+            box-shadow: none;
+        }
+
+        &.owl-next {
+            span {
+                content: url('../../assets/images/arrow-next.svg');
+            }
+        }
+        
+        &.owl-prev {
+            @extend .owl-next;
+            transform: rotate(180deg);
+        }
+    }
+
+    .disabled {
+        background: $grey300;
+        cursor: auto;
+
+        span {
+            filter: brightness(0) invert(1);
+        }
+
+        &:hover {
+            background: $grey300;
+        }
+    }
+}
+
+/* END BTN.SCSS */

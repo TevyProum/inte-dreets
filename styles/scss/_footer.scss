@@ -1,0 +1,133 @@
+/* START FOOTER.SCSS */
+
+footer {
+    box-shadow: 0px 2px 24px rgba(27, 19, 0, 0.08);
+    .container {
+        padding: 40px 16px 32px 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        position: relative;
+
+        @media #{$tablet} {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        @media #{$desktop} {
+            padding: 96px 120px;
+        }
+
+        .firstColumn {
+            flex-basis: 35%;
+    
+            &__images {
+                margin-bottom: 24px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                gap: 20px;
+                max-width: 420px;
+    
+                img {
+                    max-height: 64px;
+                    width: auto;
+                }
+            }
+    
+            p {
+                font-size: 14px;
+            }
+    
+            &__network {
+                display: flex;
+                gap: 24px;
+                margin-top: 24px;
+    
+                a {
+                    border: 1px solid $yellow900;
+                    border-radius: 8px;
+                    width: 44px;
+                    height: 44px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: background-color 0.3s ease-in-out;
+    
+                    &:hover {
+                        background-color: $yellow100;
+                    }
+                }
+            }
+        }
+    
+        .secondColumn {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+    
+            @media #{$tablet} {
+                flex-direction: row;
+                gap: 40px;
+            }
+    
+            @media #{$desktop} {
+                gap: 120px;
+            }
+    
+            li {
+                margin-bottom: 24px;
+    
+                &:last-child {
+                    margin-bottom: 0;
+                }
+    
+                a:not(.btn) {
+                    font-weight: 400;
+                    color: black;
+                    opacity: 0.65;
+                    transition: opacity 0.3s ease-in-out;
+    
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+
+                &.contact {
+                    cursor: pointer;
+                    color: black;
+                    opacity: 0.65;
+                    transition: opacity 0.3s ease-in-out;
+    
+                    &:hover {
+                        opacity: 1;
+                    }   
+                }
+            }
+        }
+
+        .backToTop {
+            position: absolute;
+            top: -22px;
+            right: 16px;
+            width: 44px;
+            height: 44px;
+            background: $yellow700;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            @media #{$laptop} {
+                display: none;
+            }
+
+            &::after {
+                content: url('../../assets/images/arrow-next2.svg');
+                transform: rotate(-90deg);
+            }
+        }
+    }
+}
+
+/* END FOOTER.SCSS */

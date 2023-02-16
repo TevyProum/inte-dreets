@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/scss/styles.css" rel="stylesheet">
+    <title>Annuaire - DREETS</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" defer></script>
+    <script src="js/menu.js" defer></script>
+    <script src="js/popin.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <!-- "headerImages" => seulement sur mobile -->
+        <div class="headerImages">
+            <a href="index.html">
+                <img src="assets/images/logo.svg" alt="Logo PRST">
+            </a>
+            <div>
+                <button id="searchIcon"></button>
+                <button id="burger"></button>
+            </div>
+        </div>
+        <!-- "headerImages" => seulement sur mobile -->
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.svg" alt="Logo PRST">
+            </a>
+            <form class="searchBar">
+                <input type="search" placeholder="Rechercher une structure..." />
+                <button type="submit">Rechercher</button>
+            </form>
+            <nav>
+                <a href="annuaire.html">Annuaire</a>
+                <a href="faq.html">FAQ</a>
+                <a href="presentation.html">Présentation</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="heading container">
+            <span data-name="annuaire">Annuaire</span>
+            <h1>Qui sont mes interlocuteurs ?</h1>
+            <p>Découvrez les acteurs du Plan Régional Santé Travail et de quelle manière chacun peut vous accompagner en fonction de votre situation.</p>
+        </section>
+
+        <section class="filters container">
+            <div class="filter">
+                <label>Thématique</label>
+                <div class="dropdown">
+                    <select>
+                        <option disabled selected hidden value="">Nom d’une thématique</option>
+                        <option>1</option>
+                        <option>2</option>
+                    </select>
+                </div>
+            </div>
+            <div class="filter">
+                <label>Public cible</label>
+                <div class="dropdown">
+                    <select>
+                        <option disabled selected hidden value="">Nouveaux arrivants</option>
+                        <option>1</option>
+                        <option>2</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+ 
+        <section class="phoneBook container">
+            <div class="phoneBook__list">
+                <div class="title">
+                    <p class="uptitle">présentation</p>
+                    <p class="uptitle">contact</p>
+                    <p class="uptitle">thématiques</p>
+                </div>
+                
+                <article>
+                    <h2>
+                        <a href="">
+                            Nom de la structure
+                        </a>
+                    </h2>
+                    <p>
+                        <strong>Tél :</strong> +00 00 00 00 00<br>
+                        <strong>Mail :</strong> <a href="mailto:contact@mail.com">contact@mail.com</a><br>
+                        <strong>Site internet :</strong> <a href="" target="_blank" class="underline">nomdusite.com</a><br>
+                        <strong>Adresse :</strong> 00 Nom / Type de rue <br>Code Postal - Ville
+                    </p>
+                    <section class="tags">
+                        <div>Chute de hauteur</div>
+                        <div>Environnement</div>
+                        <div>Contamination</div>
+                    </section>
+                    <a href="structure.html" class="btn next">Voir la fiche de la structure</a>
+                </article>
+                <article>
+                    <h2>
+                        <a href="">
+                            Nom de la structure
+                        </a>
+                    </h2>
+                    <p>
+                        <strong>Tél :</strong> +00 00 00 00 00<br>
+                        <strong>Mail :</strong> <a href="mailto:contact@mail.com">contact@mail.com</a><br>
+                        <strong>Site internet :</strong> <a href="" target="_blank" class="underline">nomdusite.com</a><br>
+                        <strong>Adresse :</strong> 00 Nom / Type de rue <br>Code Postal - Ville
+                    </p>
+                    <section class="tags">
+                        <div>Changement climatique</div>
+                        <div>TMS</div>
+                        <div>Psychologie</div>
+                    </section>
+                    <a href="structure.html" class="btn next">Voir la fiche de la structure</a>
+                </article>
+                <article>
+                    <h2>
+                        <a href="">
+                            Nom de la structure
+                        </a>
+                    </h2>
+                    <p>
+                        <strong>Tél :</strong> +00 00 00 00 00<br>
+                        <strong>Mail :</strong> <a href="mailto:contact@mail.com">contact@mail.com</a><br>
+                        <strong>Site internet :</strong> <a href="" target="_blank" class="underline">nomdusite.com</a><br>
+                        <strong>Adresse :</strong> 00 Nom / Type de rue <br>Code Postal - Ville
+                    </p>
+                    <section class="tags">
+                        <div>Chute de hauteur</div>
+                        <div>Environnement</div>
+                        <div>Contamination</div>
+                    </section>
+                    <a href="structure.html" class="btn next">Voir la fiche de la structure</a>
+                </article>
+                <article>
+                    <h2>
+                        <a href="">
+                            Nom de la structure
+                        </a>
+                    </h2>
+                    <p>
+                        <strong>Tél :</strong> +00 00 00 00 00<br>
+                        <strong>Mail :</strong> <a href="mailto:contact@mail.com">contact@mail.com</a><br>
+                        <strong>Site internet :</strong> <a href="" target="_blank" class="underline">nomdusite.com</a><br>
+                        <strong>Adresse :</strong> 00 Nom / Type de rue <br>Code Postal - Ville
+                    </p>
+                    <section class="tags">
+                        <div>Chute de hauteur</div>
+                        <div>Environnement</div>
+                        <div>Contamination</div>
+                    </section>
+                    <a href="structure.html" class="btn next">Voir la fiche de la structure</a>
+                </article>
+                <article>
+                    <h2>
+                        <a href="">
+                            Nom de la structure
+                        </a>
+                    </h2>
+                    <p>
+                        <strong>Tél :</strong> +00 00 00 00 00<br>
+                        <strong>Mail :</strong> <a href="mailto:contact@mail.com">contact@mail.com</a><br>
+                        <strong>Site internet :</strong> <a href="" target="_blank" class="underline">nomdusite.com</a><br>
+                        <strong>Adresse :</strong> 00 Nom / Type de rue <br>Code Postal - Ville
+                    </p>
+                    <section class="tags">
+                        <div>Chute de hauteur</div>
+                        <div>Environnement</div>
+                        <div>Contamination</div>
+                    </section>
+                    <a href="structure.html" class="btn next">Voir la fiche de la structure</a>
+                </article>
+                <article>
+                    <h2>
+                        <a href="">
+                            Nom de la structure
+                        </a>
+                    </h2>
+                    <p>
+                        <strong>Tél :</strong> +00 00 00 00 00<br>
+                        <strong>Mail :</strong> <a href="mailto:contact@mail.com">contact@mail.com</a><br>
+                        <strong>Site internet :</strong> <a href="" target="_blank" class="underline">nomdusite.com</a><br>
+                        <strong>Adresse :</strong> 00 Nom / Type de rue <br>Code Postal - Ville
+                    </p>
+                    <section class="tags">
+                        <div>Chute de hauteur</div>
+                        <div>Environnement</div>
+                        <div>Contamination</div>
+                    </section>
+                    <a href="structure.html" class="btn next">Voir la fiche de la structure</a>
+                </article>
+                <article>
+                    <h2>
+                        <a href="">
+                            Nom de la structure
+                        </a>
+                    </h2>
+                    <p>
+                        <strong>Tél :</strong> +00 00 00 00 00<br>
+                        <strong>Mail :</strong> <a href="mailto:contact@mail.com">contact@mail.com</a><br>
+                        <strong>Site internet :</strong> <a href="" target="_blank" class="underline">nomdusite.com</a><br>
+                        <strong>Adresse :</strong> 00 Nom / Type de rue <br>Code Postal - Ville
+                    </p>
+                    <section class="tags">
+                        <div>Chute de hauteur</div>
+                        <div>Environnement</div>
+                        <div>Contamination</div>
+                    </section>
+                    <a href="structure.html" class="btn next">Voir la fiche de la structure</a>
+                </article>
+            </div>
+    
+            <div class="pagination">
+                <a href="" class="prev page-numbers disabled"></a>
+                <a href="" class="page-numbers current">1</a>
+                <a href="" class="page-numbers">2</a>
+                <a href="" class="page-numbers">3</a>
+                <a href="" class="page-numbers">...</a>
+                <a href="" class="next page-numbers"></a>
+            </div>
+        </section>
+        
+        <section class="redirection">
+            <div class="container">
+                <div class="redirection__text">
+                    <p class="uptitle">FAQ</p>
+                    <h2>Vous avez besoin d’aide ?</h2>
+                    <p>Vous n'avez pas trouvé l'information que vous cherchez ? Consultez la FAQ pour vous guider.</p>
+                    <a href="faq.html" class="btn" role="button">Accéder à la FAQ</a>
+                </div>
+                <div class="redirection__image">
+                    <img src="assets/images/image2.jpeg" alt="" loading="lazy">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="firstColumn">
+                <div class="firstColumn__images">
+                   <a href="index.html">
+                       <img src="assets/images/logo.svg" alt="Logo PRST">
+                   </a>
+                   <a href="" target="_blank">
+                       <img src="assets/images/logo-dreets.svg" alt="Logo DREETS">
+                   </a>
+                </div>
+                <p>At nunc si ad aliquem bene nummatum tumentemque ideo honestus advena salutatum introieris, primitus tamquam exoptatus suscipieris et interrogat.</p>
+                <ul class="firstColumn__network">
+                    <a href="" target="_blank">
+                        <img src="assets/images/rs-linkedin.svg" alt="Linkedin">
+                    </a>
+                    <a href="" target="_blank">
+                        <img src="assets/images/rs-fb.svg" alt="Facebook">
+                    </a>
+                </ul>
+            </div>
+            <div class="secondColumn">
+                <ul class="secondColumn__menu">
+                    <li><a href="annuaire.html">Annuaire</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="presentation.html">Présentation</a></li>
+                    <li>
+                        <a href="" class="btn download" role="button">Télécharger le PRST 2022</a>
+                    </li>
+                </ul>
+                <ul class="secondColumn__menu">
+                    <li class="contact">Contact administrateur</li>
+                    <li><a href="rgpd.html">RGPD</a></li>
+                    <li><a href="mentions.html">Mentions légales</a></li>
+                    <li><a href="">Plan du site</a></li>
+                </ul>
+            </div>
+            <div class="backToTop"></div>
+        </div>
+
+        <!-- POP-IN CONTACT ADMIN + OVERLAY -->
+        <section class="popinContact">
+            <div class="popinContact__text">
+                <div class="introduction">
+                    <button class="closeContact secondary">Fermer</button>
+                    <h2>Contact administrateur</h2>
+                    <p>At nunc si ad aliquem bene nummatum tumentemque ideo honestus advena salutatum introieris, primitus tamquam exoptatus suscipieris et interrogat.</p>
+                </div>
+                <form>
+                    <div>
+                        <label>Lorem ipsum</label>
+                        <textarea placeholder="Message..."></textarea>
+                    </div>
+                    <button type="submit">Envoyer mon message</button>
+                </form>
+            </div>
+        </section>
+        <section class="popinOverlayContact"></section>
+        <!-- POP-IN CONTACT ADMIN + OVERLAY -->
+
+        <div id="overlay" class="overlay"></div>
+   </footer>
+   
+</body>
+</html>

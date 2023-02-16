@@ -1,0 +1,32 @@
+/* START BACKGROUND-COLUMNS.SCSS */
+
+.backgroundColumns {
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        @media #{$tablet} {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    
+        div {
+            background: $yellow0;
+            border-radius: 16px;
+            padding: 32px;
+            text-align: center;
+            flex-basis: 31%;
+    
+            h3 {
+                margin: 16px 0;
+            }
+        }
+    }
+
+    .btn {
+        margin: 32px auto 0 auto;
+    }
+}
+
+/* END BACKGROUND-COLUMNS.SCSS */

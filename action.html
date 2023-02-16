@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/scss/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="styles/owlcarousel/owl.theme.default.min.css">
+    <title>Actions - DREETS</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" defer></script>
+    <script src="js/menu.js" defer></script>
+    <script src="js/owl.carousel.min.js" defer></script>
+    <script src="js/slider.js" defer></script>
+    <script src="js/tabs.js" defer></script>
+    <script src="js/popin.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <!-- "headerImages" => seulement sur mobile -->
+        <div class="headerImages">
+            <a href="index.html">
+                <img src="assets/images/logo.svg" alt="Logo PRST">
+            </a>
+            <div>
+                <button id="searchIcon"></button>
+                <button id="burger"></button>
+            </div>
+        </div>
+        <!-- "headerImages" => seulement sur mobile -->
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.svg" alt="Logo PRST">
+            </a>
+            <form class="searchBar">
+                <input type="search" placeholder="Rechercher une structure..." />
+                <button type="submit">Rechercher</button>
+            </form>
+            <nav>
+                <a href="annuaire.html">Annuaire</a>
+                <a href="faq.html">FAQ</a>
+                <a href="presentation.html">Présentation</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="template container">
+            <div class="template__content action">
+                <section class="title">
+                    <h1>Prévenir l’exposition des travailleurs aux fibres d’amiante</h1>
+                    <section class="tags">
+                        <div>Tag</div>
+                        <div>Tag</div>
+                        <div>Tag</div>
+                    </section>
+                    <p><strong>Axe de travail :</strong> Renforcer la prévention primaire au travail et la culture de prévention</p>
+                    <p>Produit totalement interdit depuis 1997 en France, l’amiante représente encore un risque majeur pour la santé des travailleurs et des citoyens, du fait par exemple de manipulation de matériaux amiantés lors d’une déconstruction. Les déchetteries sont ici ciblées, car elles sont le lieu sur lequel transitent ces matériaux, parfois en parfaite méconnaissance du danger.</p>
+                </section>
+    
+                <aside>
+                    <div class="textBlock">
+                        <h3>Les contributeurs et animateurs de l’action</h3>
+                        <p>
+                            Dreets, ARS, Dreal, MSA, OPPBTP, Carsat, PST 59 et AST 62
+                        </p>
+                        <div class="images">
+                            <img src="assets/images/logo-aract.svg" alt="Logo Aract">
+                            <img src="assets/images/logo-aract.svg" alt="Logo Aract">
+                            <img src="assets/images/logo-aract.svg" alt="Logo Aract">
+                            <img src="assets/images/logo-aract.svg" alt="Logo Aract">
+                            <img src="assets/images/logo-aract.svg" alt="Logo Aract">
+                        </div>
+                        <a href="index.html" class="btn download" role="button">Télécharger le PRST 2022</a>
+                    </div>
+                </aside>
+
+                <div id="tabs"></div>
+        
+                <section class="tabs desktop">
+                    <div data-tab="tab-1" data-name="presentation" class="tab-filter active current">
+                        <a href="#tabs">Présentation</a>
+                    </div>
+                    <div data-tab="tab-2" data-name="programme" class="tab-filter">
+                        <a href="#tabs">Programme et enjeux</a>
+                    </div>
+                    <div data-tab="tab-3" data-name="ressources" class="tab-filter">
+                        <a href="#tabs">Ressources</a>
+                    </div>
+                </section>
+
+                <section class="tabsMobile dropdown">
+                    <select class="">
+                        <option value="tab-1">Présentation</option>
+                        <option value="tab-2">Programme et enjeux</option>
+                        <option value="tab-3">Ressources</option>
+                    </select>
+                </section>
+
+                <section class="tab-content current" id="tab-1">
+                    <!-- <div class="video">
+                        <video controls poster="assets/images/image2.jpeg">
+                            <source src="assets/images/video-test.mp4" type="video/mp4">
+                        </video>
+                    </div> -->
+
+                    <figure>
+                        <iframe src="https://www.youtube.com/embed/OLMGsO4CqlQ?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </figure>
+                    
+                    <h3>Les objectifs de l’action</h3>
+                    <ul>
+                        <li>
+                            <strong>Objectif 1 :</strong> Informer et sensibiliser les acteurs de l’entreprise aux risque chimique amiante.
+                        </li>
+                        <li>
+                            <strong>Objectif 2 :</strong> Faire monter en compétence les acteurs de la prévention, notamment les SPST pour mieux accompagner les entreprises.
+                        </li>
+                        <li>
+                            <strong>Objectif 3 :</strong> Poursuivre la démarche de coopération régionale sur la thématique amiante.
+                        </li>
+                        <a href="index.html" class="btn download" role="button">Télécharger le PRST 2022</a>
+                    </ul>
+
+                    <div class="number">
+                        <div class="number__columns">
+                            <span>1</span>
+                            <p>cause de décès liés au travail, hors accidents du travail</p>
+                        </div>
+                        <div class="number__columns">
+                            <span>2<sup>e</sup></span>
+                            <p>cause de maladies professionnelles après les TMS</p>
+                        </div>
+                        <div class="number__columns">
+                            <span>4 065</span>
+                            <p>maladies professionnelles liées à l’amiante reconnues, dont 83 % sont des cancers (2014)</p>
+                        </div>
+                    </div>
+
+                    <h3>Publics cibles</h3>
+                    <ul>
+                        <li>
+                            Entreprises, installations et usagers de collectes de déchets recevant des matériaux amiantés
+                        </li>
+                        <li>
+                            Donneurs d’ordres
+                        </li>
+                        <li>
+                            Organismes de formation « Sous-section 4 »
+                        </li>
+                        <li>
+                            Entreprises de transformation de matériaux contenant de l’amiante en silice
+                        </li>
+                    </ul>
+
+                    <h3>Livrables et indicateurs de l’action</h3>
+                    <ul>
+                        <li>
+                            <strong>Objectif 1 :</strong> questionnaires envoyés et reçus, cibles, nombre de participants réunion d’information, nombre de contrôles réalisés et nombre et type d’infractions relevées
+                        </li>
+                        <li>
+                            <strong>Objectif 2 :</strong> nombre de SPST formés, de cessions de formation, d’heures de formation dispensées d’ordres
+                        </li>
+                    </ul>
+                </section>
+    
+                <section class="tab-content" id="tab-2">
+                    <h2>Programme</h2>
+                        <h3>
+                            Objectif 1 : Informer et sensibiliser
+                        </h3>
+                        <ul>
+                            <li>Recenser les déchetteries acceptant les déchets amiantés et vérifier la formation du personnel en sous-section 4, les modes opératoires et notices de postes, la réalisation de mesures d’empoussièrement (environnementales et individuelles).</li>
+                            <li>Lister auprès des SPST les médecins du travail en charge du suivi, afin d’évaluer leurs modalités de fonctionnement en matière de prévention primaire et de suivi santé des opérateurs.</li>
+                            <li>Recenser les actions et la documentation des autres régions concernant les apports de matériaux amiantés en déchetterie, s’appuyer sur les documents Fnade.</li>
+                            <li>Créer un flyer pour l’information des utilisateurs : matériaux acceptés et modalités de dépôt en déchetterie, filières d’élimination pour les refus, moyens pour identifier des matériaux amiantés…</li>
+                            <li>Définir une action ciblée (réunion d’information et ressources Internet…) pour les déchetteries dont le personnel n’est pas formé, notamment celles n’acceptant pas les déchets amiantés (2023).</li>
+                            <li>Réaliser un autodiagnostic (2022) pour les entreprises et collectivités, afin qu’elles s’approprient le contexte règlementaire : bonnes pratiques, audit de positionnement. En écho : alimenter les DUERP, les plans d’actions et accompagner. Bénéficier d’un retour «terrain» et poursuivre les formations à destination des donneurs d’ordres.</li>
+                            <li>Contrôler les déchetteries (entreprises et collectivités) recevant des matériaux amiantés (2023-2024).</li>
+                        </ul>
+                        <h3>
+                            Objectif 2 : Faire monter en compétence les acteurs de la prévention, notamment les SPST pour mieux accompagner les entreprises
+                        </h3>
+                        <ul>
+                            <li>Réaliser une évaluation des attentes des SPST (2022) pour déployer les moyens ad hoc ; contact avec les IPRP afin de définir les modules de formation et d’information (2023).</li>
+                            <li>Déploiement des formations puis bilan (2ème semestre 2023 puis 2024-2025).</li>
+                        </ul>
+                        <h3>
+                            Objectif 2 : Faire monter en compétence les acteurs de la prévention, notamment les SPST pour mieux accompagner les entreprises
+                        </h3>
+                        <ul>
+                            <li>Continuer le travail commun et le partage d’informations sur le projet Valame : transformation de matériaux contenant de l’amiante en silice par traitement à l’acide (2022-2025).</li>
+                            <li>Mettre en œuvre les actions auprès des déchetteries et la sensibiliser leurs usagers.</li>
+                            <li>Veille réglementaire en réseau.</li>
+                        </ul>
+                    
+                    <h2>Enjeux de l’action</h2>
+                    <p>
+                        Le risque amiante implique une pluralité d’acteurs et impose une approche coordonnée. Le risque est méconnu, par exemple par les donneurs d’ordre, premier maillon de la prévention. Leurs connaissances doivent alors être renforcées, ainsi que leurs obligations. Dans la continuité de l’action PRST 3, il est aussi nécessaire de coordonner l’action des différents préventeurs, dont les approches et les compétences sont complémentaires. Les déchetteries sont apparues comme un sujet pouvant fédérer ces acteurs : Dreets (code du travail), Dreal (classement des sites), ARS (code de santé publique), Carsat (conseil aux entreprises), OPPBTP (entreprises d’élimination des déchets), SPST (conseil et surveillance médicale). Une première approche permet de renforcer la prévention des travailleurs dans les déchetteries mais elle n’est pas suffisante. Des déchets amiantés peuvent être déposés en méconnaissance de leur composition et ainsi générer des expositions. Il est utile de sensibiliser les usagers des déchetteries, particuliers et professionnels : connaissance de l’amiante, sélectivité des déchets, lieux où traiter les déchets refusés. 
+                    </p>
+                    <p>
+                        Les salariés des entreprises intervenant en sous-section 4 (opérations sur matériaux susceptibles de libérer des fibres d’amiante) doivent être formés et pouvoir justifier d’une attestation de compétence. Pourtant un décalage persiste entre les intentions de cette obligation et la réalité des pratiques de terrain. En conséquence, une attention particulière doit porter sur la qualité de ces formations.
+                    </p>
+                    <a href="index.html" class="btn download" role="button">Télécharger le PRST 2022</a>
+                </section>
+
+                <section class="tab-content" id="tab-3">
+                    <section class="filters">
+                        <div class="filter">
+                            <label>Filtrer par</label>
+                            <div class="dropdown">
+                                <select>
+                                    <option disabled selected hidden value="">Objectif</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="filter">
+                            <div class="dropdown">
+                                <select>
+                                    <option disabled selected hidden value="">Type</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="filter">
+                            <div class="dropdown">
+                                <select>
+                                    <option disabled selected hidden value="">Année</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                </select>
+                            </div>
+                        </div>
+                    </section>
+
+                    <a href="" class="reinit">Reinitialiser les filtres</a>
+
+                    <section class="ressources">
+                        <div class="ressources__title">
+                            <p class="uptitle">Type</p>
+                            <p class="uptitle">Nom</p>
+                            <p class="uptitle">Objectif</p>
+                            <p class="uptitle">Date</p>
+                        </div>
+
+                        <div class="ressources__list">
+                            <article>
+                                <p class="type -doc">
+                                    PDF
+                                </p>
+                                <h2>
+                                    <a href="">
+                                        A sed metus mattis faucibus integer. Est.
+                                    </a>
+                                </h2>
+                                <p>
+                                    S’informer
+                                </p>
+                                <p>
+                                    18/06/2022
+                                </p>
+                                <a href="" class="btn download2">Télécharger</a>
+                            </article>
+    
+                            <article>
+                                <p class="type -link">
+                                    Lien
+                                </p>
+                                <h2>
+                                    <a href="">
+                                        Felis tellus cras
+                                    </a>
+                                </h2>
+                                <p>
+                                    S’informer
+                                </p>
+                                <p>
+                                    18/06/2022
+                                </p>
+                                <a href="" class="btn next2">Voir le site</a>
+                            </article>
+
+                            <article>
+                                <p class="type -video">
+                                    Video
+                                </p>
+                                <h2>
+                                    <a href="">
+                                        A sed metus mattis faucibus integer. Est.
+                                    </a>
+                                </h2>
+                                <p>
+                                    S’informer
+                                </p>
+                                <p>
+                                    18/06/2022
+                                </p>
+                                <a href="" class="btn watch">Voir la vidéo</a>
+                            </article>
+
+                            <article>
+                                <p class="type -doc">
+                                    PDF
+                                </p>
+                                <h2>
+                                    <a href="">
+                                        A sed metus mattis faucibus integer. Est.
+                                    </a>
+                                </h2>
+                                <p>
+                                    S’informer
+                                </p>
+                                <p>
+                                    18/06/2022
+                                </p>
+                                <a href="" class="btn download2">Télécharger</a>
+                            </article>
+    
+                            <article>
+                                <p class="type -link">
+                                    Lien
+                                </p>
+                                <h2>
+                                    <a href="">
+                                        Felis tellus cras
+                                    </a>
+                                </h2>
+                                <p>
+                                    S’informer
+                                </p>
+                                <p>
+                                    18/06/2022
+                                </p>
+                                <a href="" class="btn next2">Voir le site</a>
+                            </article>
+
+                            <article>
+                                <p class="type -video">
+                                    Video
+                                </p>
+                                <h2>
+                                    <a href="">
+                                        A sed metus mattis faucibus integer. Est.
+                                    </a>
+                                </h2>
+                                <p>
+                                    S’informer
+                                </p>
+                                <p>
+                                    18/06/2022
+                                </p>
+                                <a href="" class="btn watch">Voir la vidéo</a>
+                            </article>
+                        </div>
+                        
+                        <div class="pagination">
+                            <a href="" class="prev page-numbers disabled"></a>
+                            <a href="" class="page-numbers current">1</a>
+                            <a href="" class="page-numbers">2</a>
+                            <a href="" class="page-numbers">3</a>
+                            <a href="" class="page-numbers">...</a>
+                            <a href="" class="next page-numbers"></a>
+                        </div>
+                    </section>
+                </section>
+
+                <section class="suggestion">
+                    <div class="suggestion__text">
+                        <h3>Ces informations vous ont-elles été utiles ?</h3>
+                        <p>Nous avons besoin de votre avis afin que nous nous améliorions de façon continue.</p>
+                    </div>
+                    <div class="suggestion__icons">
+                        <button class="secondary yes">Oui</button>
+                        <button class="secondary no">Non</button>
+                    </div>
+                </section>
+
+                <!-- POP-IN SUGGESTION + OVERLAY -->
+                <section class="popin">
+                    <div class="popin__text">
+                        <div class="introduction">
+                            <button class="close secondary">Fermer</button>
+                            <h2>Nous sommes navrés si ces informations ne vous ont pas été utiles...</h2>
+                            <p>Nous sommes ouverts à toute proposition afin d’améliorer cette plateforme faite pour vous !</p>
+                        </div>
+                        <form>
+                            <div class="gfield">
+                                <label>Suggestion d’amélioration</label>
+                                <textarea placeholder="Je note ma suggestion ici..."></textarea>
+                            </div>
+                            <div class="gform_footer">
+                                <input type="button" value="Envoyer ma demande">
+                            </div>
+                        </form>
+                    </div>
+                </section>
+                <section class="popinOverlay"></section>
+                <!-- POP-IN SUGGESTION + OVERLAY -->
+            </div>
+        </section>
+
+        <section class="sliderCards action container">
+            <div class="sliderCards__title">
+                <h3>Ces actions pourraient vous intéresser</h3>
+                <div class="arrow"></div>
+            </div>
+            <div class="sliderCards__list owl-carousel">
+                <div class="card">
+                    <h3>Prévenir l’exposition des travailleurs aux fibres d’amiante</h3>
+                    <p>
+                        Produit totalement interdit depuis 1997 en France, l’amiante représente encore un risque majeur pour la santé des travailleurs et des citoyens, du fait par exemple de manipulation de matériaux amiantés lors d’une déconstruction. Les déchetteries sont ici ciblées, car elles sont le lieu sur lequel transitent ces matériaux, parfois en parfaite méconnaissance du danger.
+                    </p>
+                    <a href="structure.html" class="cta">Consulter l’action</a>
+                </div>
+                <div class="card">
+                    <h3>Prévenir l’exposition des travailleurs aux fibres d’amiante</h3>
+                    <p>
+                        Produit totalement interdit depuis 1997 en France, l’amiante représente encore un risque majeur pour la santé des travailleurs et des citoyens, du fait par exemple de manipulation de matériaux amiantés lors d’une déconstruction. Les déchetteries sont ici ciblées, car elles sont le lieu sur lequel transitent ces matériaux, parfois en parfaite méconnaissance du danger.
+                    </p>
+                    <a href="structure.html" class="cta">Consulter l’action</a>
+                </div>
+                <div class="card">
+                    <h3>Prévenir l’exposition des travailleurs aux fibres d’amiante</h3>
+                    <p>
+                        Produit totalement interdit depuis 1997 en France, l’amiante représente encore un risque majeur pour la santé des travailleurs et des citoyens, du fait par exemple de manipulation de matériaux amiantés lors d’une déconstruction. Les déchetteries sont ici ciblées, car elles sont le lieu sur lequel transitent ces matériaux, parfois en parfaite méconnaissance du danger.
+                    </p>
+                    <a href="structure.html" class="cta">Consulter l’action</a>
+                </div>
+                <div class="card">
+                    <h3>Prévenir l’exposition des travailleurs aux fibres d’amiante</h3>
+                    <p>
+                        Produit totalement interdit depuis 1997 en France, l’amiante représente encore un risque majeur pour la santé des travailleurs et des citoyens, du fait par exemple de manipulation de matériaux amiantés lors d’une déconstruction. Les déchetteries sont ici ciblées, car elles sont le lieu sur lequel transitent ces matériaux, parfois en parfaite méconnaissance du danger.
+                    </p>
+                    <a href="structure.html" class="cta">Consulter l’action</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="redirection">
+            <div class="container">
+                <div class="redirection__text">
+                    <p class="uptitle">FAQ</p>
+                    <h3>Vous avez besoin d’aide ?</h3>
+                    <p>Vous n'avez pas trouvé l'information que vous cherchez ? Consultez la FAQ pour vous guider.</p>
+                    <a href="faq.html" class="btn" role="button">Accéder à la FAQ</a>
+                </div>
+                <div class="redirection__image">
+                    <img src="assets/images/image2.jpeg" alt="" loading="lazy">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="firstColumn">
+                <div class="firstColumn__images">
+                   <a href="index.html">
+                       <img src="assets/images/logo.svg" alt="Logo PRST">
+                   </a>
+                   <a href="" target="_blank">
+                       <img src="assets/images/logo-dreets.svg" alt="Logo DREETS">
+                   </a>
+                </div>
+                <p>At nunc si ad aliquem bene nummatum tumentemque ideo honestus advena salutatum introieris, primitus tamquam exoptatus suscipieris et interrogat.</p>
+                <ul class="firstColumn__network">
+                    <a href="" target="_blank">
+                        <img src="assets/images/rs-linkedin.svg" alt="Linkedin">
+                    </a>
+                    <a href="" target="_blank">
+                        <img src="assets/images/rs-fb.svg" alt="Facebook">
+                    </a>
+                </ul>
+            </div>
+            <div class="secondColumn">
+                <ul class="secondColumn__menu">
+                    <li><a href="annuaire.html">Annuaire</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="presentation.html">Présentation</a></li>
+                    <li>
+                        <a href="" class="btn download" role="button">Télécharger le PRST 2022</a>
+                    </li>
+                </ul>
+                <ul class="secondColumn__menu">
+                    <li class="contact">Contact administrateur</li>
+                    <li><a href="rgpd.html">RGPD</a></li>
+                    <li><a href="mentions.html">Mentions légales</a></li>
+                    <li><a href="">Plan du site</a></li>
+                </ul>
+            </div>
+
+            <!-- POP-IN CONTACT ADMIN + OVERLAY -->
+            <section class="popinContact">
+                <div class="popinContact__text">
+                    <div class="introduction">
+                        <button class="closeContact secondary">Fermer</button>
+                        <h2>Vous avez rencontré une difficulté lors de votre visite sur la plateforme ? Vous avez vu une coquille dans un texte ?</h2>
+                        <p>Nous sommes ouverts à toute proposition d’amélioration ! Indiquez-nous vos coordonnées afin que nous puissions vous apporter une réponse.</p>
+                    </div>
+                    <form>
+                        <div class="gfield">
+                            <label>Message <span class="asterisk">*</span></label>
+                            <textarea placeholder="Je note mon message ici..."></textarea>
+                            <span>
+                                Le champ « Message » est mis à disposition pour détailler votre demande, mais il ne doit pas contenir de données sensibles à caractère personnel. Consultez le site de la CNIL pour en savoir plus sur les données sensibles à caractère personnel.
+                                <br><a href="https://www.cnil.fr/fr/definition/donnee-sensible" target="_blank">https://www.cnil.fr/fr/definition/donnee-sensible</a>
+                            </span>
+                        </div>
+                        <div class="gfield">
+                            <label>Prénom <span class="asterisk">*</span></label>
+                            <input placeholder="John"></input>
+                        </div>
+                        <div class="gfield">
+                            <label>Nom <span class="asterisk">*</span></label>
+                            <input placeholder="Doe"></input>
+                        </div>
+                        <div class="gfield">
+                            <label>E-mail <span class="asterisk">*</span></label>
+                            <input type="email" placeholder="john.doe@google.com"></input>
+                        </div>
+                        <div class="ginput_container_consent">
+                            <input type="checkbox">
+                            <label>En soumettant ce formulaire, j’accepte que les informations saisies soient utilisées pour permettre de me recontacter, répondre à ma demande.</label>
+                        </div>
+                        <div class="gform_footer">
+                            <input type="button" value="Envoyer ma demande">
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section class="popinOverlayContact"></section>
+            <!-- POP-IN CONTACT ADMIN + OVERLAY -->
+
+            <div class="backToTop"></div>
+        </div>
+        <div id="overlay" class="overlay"></div>
+   </footer>
+    
+</body>
+</html>

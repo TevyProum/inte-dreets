@@ -1,0 +1,43 @@
+/* START HEADING.SCSS */
+
+.heading {
+    text-align: center;
+    margin-bottom: 40px;
+
+    @media #{$laptop} {
+        margin-bottom: 80px;
+    }
+
+    h1 {
+        max-width: 996px;
+        margin: 8px auto 32px auto;
+    }
+
+    p {
+        max-width: 996px;
+        margin: auto;
+        font-size: 16px;
+        line-height: 150%;
+
+        @media #{$laptop} {
+            font-size: 18px;
+            line-height: 150%;
+        }
+        
+    }
+
+    span {
+        display: flex;
+        flex-direction: column;
+
+        &[data-name='annuaire']::before {
+            content: url('../../assets/images/icon-annuaire2.svg');
+        }
+
+        &[data-name='faq']::before {
+            content: url('../../assets/images/icon-faq2.svg');
+        }
+    }
+}
+
+/* END HEADING.SCSS */

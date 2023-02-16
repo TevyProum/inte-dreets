@@ -1,0 +1,121 @@
+/* START IMGTXT.SCSS */
+
+.imgTxt {
+    padding: 40px 0;
+
+    @media #{$laptop} {
+        padding: 120px 0;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        @media #{$laptop} {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    &.-reverse {
+        padding: 0 0 40px 0;
+
+        @media #{$laptop} {
+            padding: 0 0 120px 0;
+        }
+
+        .container {
+            @media #{$laptop} {
+                flex-direction: row-reverse;
+            }
+
+            .btn {
+                &::after {
+                    content: url('../../assets/images/download2.svg')
+                }
+            }
+        }
+    }
+
+    &__text {
+        flex-basis: 40.5%;
+
+        p {
+            margin-bottom: 24px;
+        }
+
+        .btn {
+            margin-top: 32px;
+        }
+
+        li {
+            margin-bottom: 24px!important;
+
+            strong {
+                font-size: 20px;
+            }
+
+            p {
+                margin: 8px 0 24px 0;
+            }
+        }
+    }
+
+    &__image {
+        flex-basis: 49%;
+        position: relative;
+
+        img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            border-radius: 16px;
+        }
+
+        &.-withCard {
+            img {
+                height: 400px;
+
+                @media #{$laptop} {
+                    height: 672px;
+                }
+            }
+
+            .card {
+                position: absolute;
+                bottom: -8px;
+                left: -8px;
+                max-width: 100%;
+                box-shadow: 0px 6px 40px rgba(27, 19, 0, 0.12);
+
+                @media #{$large-phone} {
+                    max-width: 388px;
+                }
+
+                @media #{$laptop} {
+                    bottom: 40px;
+                    left: -85px;
+                }
+    
+                p {
+                    font-size: 14px;
+                    line-height: 150%;
+                }
+    
+                &:hover {
+                    border: 1px solid $white;
+                }
+
+                .cta {
+                    &::after {
+                        content: url('../../assets/images/download3.svg');
+                        padding-bottom: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* END IMGTXT.SCSS */

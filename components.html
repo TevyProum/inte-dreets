@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/scss/styles.css" rel="stylesheet">
+    <title>Composants - DREETS</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" defer></script>
+    <script src="js/menu.js" defer></script>
+    <script src="js/popin.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <!-- "headerImages" => seulement sur mobile -->
+        <div class="headerImages">
+            <a href="index.html">
+                <img src="assets/images/logo.svg" alt="Logo PRST">
+            </a>
+            <div>
+                <button id="searchIcon"></button>
+                <button id="burger"></button>
+            </div>
+        </div>
+        <!-- "headerImages" => seulement sur mobile -->
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.svg" alt="Logo PRST">
+            </a>
+            <form class="searchBar">
+                <input type="search" placeholder="Rechercher une structure..." />
+                <button type="submit">Rechercher</button>
+            </form>
+            <nav>
+                <a href="annuaire.html">Annuaire</a>
+                <a href="faq.html">FAQ</a>
+                <a href="presentation.html">Présentation</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="container">
+            <h1>Liste composants</h1>
+            <h2>Composants - Design system</h2>
+        
+            <div style="display: flex; gap: 16px; flex-wrap: wrap">
+                <a href="index.html" class="btn" role="button">Rechercher</a>
+                <a href="index.html" class="btn secondary" role="button">Rechercher</a>
+                <a href="index.html" class="cta">Label lien</a>
+            </div>
+
+            <br>
+            
+            <form class="searchBar">
+                <input type="search" placeholder="Rechercher une structure, un document..." />
+                <button type="submit">Rechercher</button>
+            </form>
+
+            <br>
+
+            <textarea placeholder="textarea"></textarea> 
+            
+            <br><br>
+
+            <div class="gfield_error">
+                <div class="ginput_container">
+                    <input aria-invalid="true" placeholder="input">
+                </div>
+                <div class="validation_message">Error message</div>
+            </div>
+
+            <br>
+        
+            <div class="dropdown">
+                <select>
+                    <option disabled selected>Disabled</option>
+                    <option>1</option>
+                    <option>2</option>
+                </select>
+            </div>
+
+            <br>
+
+            <section class="tabs">
+                <div class="active">Tab</div>
+                <div>Tab</div>
+                <div>Tab</div>
+            </section>
+
+            <br>
+
+            <section class="tags">
+                <div>Tag</div>
+                <div>Tag</div>
+                <div>Tag</div>
+            </section>
+
+            <br>
+
+            <section class="suggestion">
+                <div class="suggestion__text">
+                    <h3>Ces informations vous ont-elles été utiles ?</h3>
+                    <p>Nous avons besoin de votre avis afin que nous nous améliorions de façon continue.</p>
+                </div>
+                <div class="suggestion__icons">
+                    <button class="secondary yes">Oui</button>
+                    <button class="secondary no">Non</button>
+                </div>
+            </section>
+
+            <br>
+
+            <div class="card">
+                <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M27.5002 44.75C17.9889 44.75 10.25 37.0111 10.25 27.5002C10.25 17.9889 17.9889 10.25 27.5002 10.25C37.0111 10.25 44.75 17.9889 44.75 27.5002C44.75 37.0111 37.0111 44.75 27.5002 44.75ZM27.5002 12.9737C19.4907 12.9737 12.9737 19.4907 12.9737 27.5002C12.9737 35.5097 19.4907 42.0263 27.5002 42.0263C35.5097 42.0263 42.0263 35.5097 42.0263 27.5002C42.0263 19.4907 35.5097 12.9737 27.5002 12.9737Z" fill="#252421"/>
+                    <path d="M51.695 53.75C51.3611 53.75 51.0275 53.6291 50.7735 53.3859L37.632 40.8704C37.1227 40.3854 37.1227 39.5991 37.632 39.1138C38.1412 38.6287 38.9669 38.6287 39.4762 39.1138L52.618 51.6293C53.1273 52.1143 53.1273 52.9006 52.618 53.3859C52.3624 53.6291 52.0289 53.75 51.695 53.75Z" fill="#252421"/>
+                </svg>
+                <h3>Moteur de recherche</h3>
+                <p>Cursus ultricies et convallis amet a aliquam. Dolor vestibulum risus sit tristique praesent mattis viverra.</p>
+                <a href="" class="cta">Faire une recherche</a>
+            </div>
+
+            <br>
+
+            <div class="pagination">
+                <a href="" class="prev page-numbers disabled"></a>
+                <a href="" class="page-numbers current">1</a>
+                <a href="" class="page-numbers">2</a>
+                <a href="" class="page-numbers">3</a>
+                <a href="" class="page-numbers">...</a>
+                <a href="" class="next page-numbers"></a>
+            </div>
+
+            <br><br>
+            <hr />
+            <br><br>
+
+            <h2>Composants - Parcours recherche</h2>
+        </section>
+
+        <section class="imgTxt">
+            <div class="container">
+                <div class="imgTxt__text">
+                    <p class="uptitle">présentation</p>
+                    <h2>Pourquoi ce portail ?</h2>
+                    <p>
+                        <strong>Pour agir ensemble de façon efficace autour des priorités régionales avec les entreprises, les partenaires institutionnels de la prévention ont ressenti le besoin de communiquer d’une même voix.</strong>
+                    </p>
+                    <p>
+                        Cette plateforme permet aux entreprises, dirigeants, encadrants et salariés de trouver les informations, les outils, les aides et les accompagnements possibles dans leur démarche de prévention des risques professionnels visés dans le PRST, car jugés prioritaires. Elle est l’un des moyens mis en œuvre en région Hauts-de-France pour développer, s’approprier et diffuser une culture de prévention commune, nécessaire à l’amélioration des conditions de travail dans les entreprises de notre région.
+                    </p>
+                    <a href="index.html" class="btn download" role="button">En savoir plus</a>
+                </div>
+                <div class="imgTxt__image">
+                    <img src="assets/images/image1.jpeg" alt="Image" loading="lazy">   
+                </div>
+            </div>
+        </section>
+
+        <section class="redirection">
+            <div class="container">
+                <div class="redirection__text">
+                    <p class="uptitle">FAQ</p>
+                    <h2>Vous avez besoin d’aide ?</h2>
+                    <p>Vous n'avez pas trouvé l'information que vous cherchez ? Consultez la FAQ pour vous guider.</p>
+                    <a href="faq.html" class="btn" role="button">Accéder à la FAQ</a>
+                </div>
+                <div class="redirection__image">
+                    <img src="assets/images/image2.jpeg" alt="" loading="lazy">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="firstColumn">
+                <div class="firstColumn__images">
+                   <a href="index.html">
+                       <img src="assets/images/logo.svg" alt="Logo PRST">
+                   </a>
+                   <a href="" target="_blank">
+                       <img src="assets/images/logo-dreets.svg" alt="Logo DREETS">
+                   </a>
+                </div>
+                <p>At nunc si ad aliquem bene nummatum tumentemque ideo honestus advena salutatum introieris, primitus tamquam exoptatus suscipieris et interrogat.</p>
+                <ul class="firstColumn__network">
+                    <a href="" target="_blank">
+                        <img src="assets/images/rs-linkedin.svg" alt="Linkedin">
+                    </a>
+                    <a href="" target="_blank">
+                        <img src="assets/images/rs-fb.svg" alt="Facebook">
+                    </a>
+                </ul>
+            </div>
+            <div class="secondColumn">
+                <ul class="secondColumn__menu">
+                    <li><a href="annuaire.html">Annuaire</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="presentation.html">Présentation</a></li>
+                    <li>
+                        <a href="" class="btn download" role="button">Télécharger le PRST 2022</a>
+                    </li>
+                </ul>
+                <ul class="secondColumn__menu">
+                    <li class="contact">Contact administrateur</li>
+                    <li><a href="rgpd.html">RGPD</a></li>
+                    <li><a href="mentions.html">Mentions légales</a></li>
+                    <li><a href="">Plan du site</a></li>
+                </ul>
+            </div>
+
+            <!-- POP-IN CONTACT ADMIN + OVERLAY -->
+            <section class="popinContact">
+                <div class="popinContact__text">
+                    <div class="introduction">
+                        <button class="closeContact secondary">Fermer</button>
+                        <h2>Contact administrateur</h2>
+                        <p>At nunc si ad aliquem bene nummatum tumentemque ideo honestus advena salutatum introieris, primitus tamquam exoptatus suscipieris et interrogat.</p>
+                    </div>
+                    <form>
+                        <div>
+                            <label>Lorem ipsum</label>
+                            <textarea placeholder="Message..."></textarea>
+                        </div>
+                        <button type="submit">Envoyer mon message</button>
+                    </form>
+                </div>
+            </section>
+            <section class="popinOverlayContact"></section>
+            <!-- POP-IN CONTACT ADMIN + OVERLAY -->
+
+            <div class="backToTop"></div>
+        </div>
+        <div id="overlay" class="overlay"></div>
+   </footer>
+   
+</body>
+</html>

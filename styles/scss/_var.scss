@@ -1,0 +1,22 @@
+$white: #FFFFFF;
+$grey100: #F3F2F1;
+$grey300: #CFCDC9;
+$grey500: #9E9B94;
+$grey700: #6D685F;
+$grey900: #3F3C37;
+$black: #252421;
+$yellow0: #FEFBF5;
+$yellow100: #FBE8C6;
+$yellow300: #F8D9A0;
+$yellow500: #F5C670;
+$yellow700: #F3B74D;
+$yellow900: #F1AF37;
+$red: #E1000F;
+
+// Responsive
+$phone: screen and (max-width: 600px);
+$large-phone: screen and (min-width: 600px);
+$tablet: screen and (min-width: 768px);
+$laptop: screen and (min-width: 992px);
+$desktop: screen and (min-width: 1200px);
+$large: screen and (min-width: 1400px);

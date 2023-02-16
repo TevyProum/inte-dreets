@@ -1,0 +1,23 @@
+/* START PRESENTATION.SCSS */
+
+.presentation {
+    .tabs {
+        margin: auto;
+        justify-content: center;
+
+        &.desktop {
+            display: none;
+        
+            @media #{$laptop} {
+                display: flex;
+            }
+        }
+
+        &.fixed {
+            left: 0;
+            right: 0;
+        }
+    }
+}
+
+/* END PRESENTATION.SCSS */

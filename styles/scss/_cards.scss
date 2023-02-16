@@ -1,0 +1,57 @@
+/* START CARDS.SCSS */
+
+.cards {
+    margin: 40px auto;
+
+    @media #{$laptop} {
+        margin: 120px auto;
+    }
+
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 56px;
+
+        @media #{$desktop} {
+            flex-direction: row;
+            align-items: flex-end;
+        }
+
+        h2 {
+            margin: 0;
+        }
+
+        @media #{$laptop} {
+            p {
+                font-size: 18px;
+                line-height: 150%;
+            }
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 40px;
+
+        @media #{$laptop} {
+            flex-direction: row;
+        }
+
+        .card {
+            &:hover .cta {
+                gap: 20px
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 150%;
+            }
+        }
+    }
+}
+
+/* END CARDS.SCSS */

@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="styles/scss/styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="styles/owlcarousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="styles/owlcarousel/owl.theme.default.min.css">
+        <title>Présentation - DREETS</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" defer></script>
+        <script src="js/menu.js" defer></script>
+        <script src="js/owl.carousel.min.js" defer></script>
+        <script src="js/slider.js" defer></script>
+        <script src="js/tabs.js" defer></script>
+        <script src="js/popin.js" defer></script>
+    </head>
+<body>
+
+    <header>
+        <!-- "headerImages" => seulement sur mobile -->
+        <div class="headerImages">
+            <a href="index.html">
+                <img src="assets/images/logo.svg" alt="Logo PRST">
+            </a>
+            <div>
+                <button id="searchIcon"></button>
+                <button id="burger"></button>
+            </div>
+        </div>
+        <!-- "headerImages" => seulement sur mobile -->
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.svg" alt="Logo PRST">
+            </a>
+            <form class="searchBar">
+                <input type="search" placeholder="Rechercher une structure..." />
+                <button type="submit">Rechercher</button>
+            </form>
+            <nav>
+                <a href="annuaire.html">Annuaire</a>
+                <a href="faq.html">FAQ</a>
+                <a href="presentation.html">Présentation</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="presentation">
+        <section class="hero">
+            <div class="container">
+                <div class="hero__text">
+                    <p>Présentation</p>
+                    <h1>Un plan au plus près des besoins des entreprises et des travailleurs</h1>
+                    <p>Agir pour préserver la santé au travail, tout au long de la vie professionnelle, pour que le travail soit facteur de santé et de bien-être.</p>
+                </div>
+            </div>
+            <div class="ellipse"><img src="assets/images/arrondi-hero.svg"></div>
+        </section>
+
+        <div id="tabs"></div>
+
+        <div class="container">
+            <section class="tabs desktop">
+                <div data-tab="tab-1" data-name="presentation" class="tab-filter active current">
+                    <a href="#tabs">Présentation</a>
+                </div>
+                <div data-tab="tab-2" data-name="axes" class="tab-filter">
+                    <a href="#tabs">Les grands axes du PRST</a>
+                </div>
+                <div data-tab="tab-3" data-name="portail" class="tab-filter">
+                    <a href="#tabs">Pourquoi ce portail ?</a>
+                </div>
+                <!-- <div data-tab="tab-4" data-name="gouvernance" class="tab-filter">
+                    <a href="#tab-3">Gouvernance</a>
+                </div> -->
+            </section>
+    
+            <section class="tabsMobile dropdown">
+                <select class="">
+                    <option value="tab-1">Présentation</option>
+                    <option value="tab-2">Les grands axes du PRST</option>
+                    <option value="tab-3">Pourquoi ce portail ?</option>
+                    <!-- <option value="tab-4">Gouvernance</option> -->
+                </select>
+            </section>
+        </div>
+
+        <!-- ONGLET PRESENTATION -->
+        <section class="tab-content current" id="tab-1">
+            <section class="imgTxt">
+                <div class="container">
+                    <div class="imgTxt__text">
+                        <p class="uptitle">présentation</p>
+                        <h2>Le Plan Régional Santé Travail en Hauts-de-France</h2>
+                        <p>
+                            Le PRST est une feuille de route construite par les différents <strong>acteurs de la santé au travail en région.</strong> Il se base sur le Plan Santé Travail national et les priorités locales communes. 
+                        </p>
+                        <p>
+                            Il permet de mettre en lumière les <strong>principaux risques,</strong> de prioriser les actions en matière de <strong>prévention</strong> primaire et secondaire, de définir un <strong>plan stratégique</strong> et opérationnel commun, et d’orchestrer la <strong>coordination</strong> des acteurs, dans le but de <strong>prévenir les risques et de réduire la sinistralité.</strong>
+                        </p>
+                        <a href="index.html" class="btn download" role="button">Télécharger le PRST 2022</a>
+                    </div>
+                    <div class="imgTxt__image">
+                        <img src="assets/images/image1.jpeg" alt="Image" loading="lazy">   
+                    </div>
+                </div>
+            </section>
+    
+            <section class="imgTxt -reverse">
+                <div class="container">
+                    <div class="imgTxt__text">
+                        <h2>Le Plan Santé Travail national</h2>
+                        <p>
+                            Les plans « santé au travail » constituent les programmes référence en matière de santé au travail. Sous l’autorité des pouvoirs publics et renouvelés tous les cinq ans depuis 2004, ces plans sont concertés avec les partenaires sociaux et les acteurs institutionnels de la prévention. Ils posent les principaux constats et fixent les orientations pour l’action.
+                        </p>
+                        <p>
+                            L’enjeu : <strong>améliorer durablement la santé au travail,</strong> pour cela prévenir efficacement les risques professionnels. Des plans nationaux santé au travail (PST) sont déclinés les plans régionaux de santé au travail (PRST), adaptés aux situations régionales <strong>selon les problématiques socio-économique</strong> et santé travail locales. 
+                        </p>
+                        <a href="index.html" class="btn download" role="button">Télécharger le PRST 2022</a>
+                        <a href="index.html" class="btn secondary download" role="button">Télécharger le PATGM</a>
+                    </div>
+                    <div class="imgTxt__image">
+                        <img src="assets/images/image1.jpeg" alt="Image" loading="lazy">   
+                    </div>
+                </div>
+            </section>
+
+            <section class="columns container">
+                <div class="columns__left">
+                    <h2>Nos engagements</h2>
+                    <p class="highlight">Un bien commun porté et assumé par les parties prenantes du le Comité régional d'orientation des conditions de travail (CROCT).</p>
+                </div>
+                <div class="columns__right">
+                    <div class="engagements">
+                        <div class="engagement">
+                            <img src="assets/images/icon-puzzle.svg">
+                            <h3>Lorem ipsum</h3>
+                            <p>Quis venenatis ipsum nibh viverra dignissim ut facilisi. Augue quisque senectus.</p>
+                        </div>
+                        <div class="engagement">
+                            <img src="assets/images/icon-build.svg">
+                            <h3>Co-construire</h3>
+                            <p>avec les entreprises : internes et externes à l'entreprise</p>
+                        </div>
+                        <div class="engagement">
+                            <img src="assets/images/icon-circle.svg">
+                            <h3>Décliner</h3>
+                            <p>les actions avec les entreprises.</p>
+                        </div>
+                        <div class="engagement">
+                            <img src="assets/images/icon-cible.svg">
+                            <h3>Respecter</h3>
+                            <p>nos engagements en tant que collectif, au service de la santé au travail.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sliderLogo container">
+                <h2>Les acteurs du PRST</h2>
+                <div class="owl-carousel">
+                    <img src="assets/images/logo-aract.svg">
+                    <img src="assets/images/logo-aract.svg">
+                    <img src="assets/images/logo-aract.svg">
+                    <img src="assets/images/logo-aract.svg">
+                    <img src="assets/images/logo-aract.svg">
+                    <img src="assets/images/logo-aract.svg">
+                    <img src="assets/images/logo-dreets.svg">
+                    <img src="assets/images/logo-dreets.svg">
+                </div>
+                <div class="arrow arrowLogo"></div>
+            </section>
+
+            <section class="backgroundRedirection container">
+                <div class="owl-carousel">
+                    <div class="backgroundRedirection__column">
+                        <div class="text">
+                            <h3>Les grands axes du PRST</h3>
+                            <p>Post hoc impie perpetratum quod in aliis quoque iam timebatur, tamquam licentia.</p>
+                            <a href="" class="btn" role="button">En savoir plus</a>
+                        </div>
+                        <img src="assets/images/image2.jpeg" alt="Image" loading="lazy"> 
+                    </div>
+                    <div class="backgroundRedirection__column">
+                        <div class="text">
+                            <h3>Pourquoi ce portail ?</h3>
+                            <p>Post hoc impie perpetratum quod in aliis quoque iam timebatur, tamquam licentia.</p>
+                            <a href="" class="btn" role="button">En savoir plus</a>
+                        </div>
+                        <img src="assets/images/image2.jpeg" alt="Image" loading="lazy"> 
+                    </div>
+                    <div class="backgroundRedirection__column">
+                        <div class="text">
+                            <h3>Gouvernance</h3>
+                            <p>Post hoc impie perpetratum quod in aliis quoque iam timebatur, tamquam licentia.</p>
+                            <a href="" class="btn" role="button">En savoir plus</a>
+                        </div>
+                        <img src="assets/images/image2.jpeg" alt="Image" loading="lazy">
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- ONGLET AXES DU PRST -->
+        <section class="tab-content" id="tab-2">
+            <section class="imgTxt">
+                <div class="container">
+                    <div class="imgTxt__text">
+                        <p class="uptitle">Les grands axes du PRST</p>
+                        <h2>Le Plan Régional Santé Travail en Hauts-de-France</h2>
+                        <p>
+                            Un axe transversal : <strong>lutter contre des accidents graves et mortels.</strong>
+                        </p>
+                        <p>
+                            Le plan 2021-2025 est composé de <strong>10 objectifs opérationnels</strong> et structuré par <strong>4 axes stratégiques</strong> et 1 axe transversal. L’architecture du PRST4 est strictement celle du plan national PST4. Au terme d’une large concertation qui a animé la programmation, voici les actions qui rendent concret ce plan.
+                        </p>
+                        <a href="index.html" class="btn download" role="button">Télécharger le PRST 2022</a>
+                    </div>
+                    <div class="imgTxt__image">
+                        <img src="assets/images/image1.jpeg" alt="Image" loading="lazy">   
+                    </div>
+                </div>
+            </section>
+
+            <section class="actionTab desktop container">
+                <div class="actionTab__left">
+                    <div data-action="action-1" class="action-filter active current">
+                        <div class="number">1</div>
+                        <p>Renforcer la prévention primaire au travail et la culture de prévention</p>
+                    </div>
+                    <div data-action="action-2" class="action-filter">
+                        <div class="number">2</div>
+                        <p>Structurer, développer la prévention de la désinsertion professionnelle, la prévention de l’usure, le maintien dans l’emploi et accompagner les salariés et les entreprises concernés</p>
+                    </div>
+                    <div data-action="action-3" class="action-filter">
+                        <div class="number">3</div>
+                        <p>Adapter la politique de santé au travail aux défis d’aujourd’hui et de demain</p>
+                    </div>
+                    <div data-action="action-4" class="action-filter">
+                        <div class="number">4</div>
+                        <p>Consolider le pilotage et la gouvernance de la prévention des risques professionnels et de la santé au travail</p>
+                    </div>
+                    <div data-action="action-5" class="action-filter">
+                        <div class="btn">Transversal</div>
+                        <p>Lutter contre des accidents du travail graves et mortels</p>
+                    </div>
+                </div>
+
+                <div class="actionTab__right">
+                    <div class="action-content current" id="action-1">
+                        <div class="number">1</div>
+                        <h3>Renforcer la prévention primaire au travail et la culture de prévention</h3>
+                        <ul>
+                            <li>
+                                <strong>Objectif 1 : </strong>Favoriser la culture de prévention, accompagner l’évaluation des risques professionnels et les démarches de prévention
+                                <a href="action.html" class="cta">Consulter les actions</a>
+                            </li>
+                            <li>
+                                <strong>Objectif 2 : </strong>Accorder une priorité aux principaux risques professionnels
+                                <a href="action.html" class="cta">Consulter les actions</a>
+                            </li>
+                            <li>
+                                <strong>Objectif 3 : </strong>Favoriser la qualité de vie et des conditions de travail, en particulier sur le plan organisationnel
+                                <a href="action.html" class="cta">Consulter les actions</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="action-content" id="action-2">
+                        <div class="number">2</div>
+                        <h3>Structurer, développer la prévention de la désinsertion professionnelle, la prévention de l’usure, le maintien dans l’emploi et accompagner les salariés et les entreprises concernés</h3>
+                        <ul>
+                            <li>
+                                <strong>Objectif 1 : </strong>Post hoc impie perpetratum quod in aliis quoque iam timebatur, tamquam licentia crudelitati indulta per suspicionum nebulas.
+                                <a href="action.html" class="cta">Consulter les actions</a>
+                            </li>
+                            <li>
+                                <strong>Objectif 2 : </strong>Post hoc impie perpetratum quod in aliis quoque iam timebatur, tamquam licentia crudelitati indulta per suspicionum nebulas.
+                                <a href="action.html" class="cta">Consulter les actions</a>
+                            </li>
+                            <li>
+                                <strong>Objectif 3 : </strong>Post hoc impie perpetratum quod in aliis quoque iam timebatur, tamquam licentia crudelitati indulta per suspicionum nebulas.
+                                <a href="action.html" class="cta">Consulter les actions</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="action-content" id="action-3">
+                        <div class="number">3</div>
+                        <h3>Adapter la politique de santé au travail aux défis d’aujourd’hui et de demain</h3>
+                        <ul>
+                            <li>
+                                <strong>Objectif 1 : </strong>Post hoc impie perpetratum quod in aliis quoque iam timebatur, tamquam licentia crudelitati indulta per suspicionum nebulas.
+                                <a href="action.html" class="cta">Consulter les actions</a>
+                            </li>
+                            <li>
+                                <strong>Objectif 2 : </strong>Post hoc impie perpetratum quod in aliis quoque iam timebatur, tamquam licentia crudelitati indulta per suspicionum nebulas.
+                                <a href="action.html" class="cta">Consulter les actions</a>
+                            </li>
+                            <li>
+                                <strong>Objectif 3 : </strong>Post hoc impie perpetratum quod in aliis quoque iam timebatur, tamquam licentia crudelitati indulta per suspicionum nebulas.
+                                <a href="action.html" class="cta">Consulter les actions</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="action-content" id="action-4">
+                        <div class="number">4</div>
+                        <h3>Consolider le pilotage et la gouvernance de la prévention des risques professionnels et de la santé au travail</h3>
+                        <ul>
+                            <li>
+                                <strong>Objectif 1 : </strong>Post hoc impie perpetratum quod in aliis quoque iam timebatur, tamquam licentia crudelitati indulta per suspicionum nebulas.
+                                <a href="action.html" class="cta">Consulter les actions</a>
+                            </li>
+                            <li>
+                                <strong>Objectif 2 : </strong>Post hoc impie perpetratum quod in aliis quoque iam timebatur, tamquam licentia crudelitati indulta per suspicionum nebulas.
+                                <a href="action.html" class="cta">Consulter les actions</a>
+                            </li>
+                            <li>
+                                <strong>Objectif 3 : </strong>Post hoc impie perpetratum quod in aliis quoque iam timebatur, tamquam licentia crudelitati indulta per suspicionum nebulas.
+                                <a href="action.html" class="cta">Consulter les actions</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="action-content" id="action-5">
+                        <div class="btn">Transversal</div>
+                        <h3>Lutter contre des accidents du travail graves et mortel</h3>
+                        <ul>
+                            <li>
+                                <strong>Objectif 1 : </strong>Post hoc impie perpetratum quod in aliis quoque iam timebatur, tamquam licentia crudelitati indulta per suspicionum nebulas.
+                                <a href="action.html" class="cta">Consulter les actions</a>
+                            </li>
+                            <li>
+                                <strong>Objectif 2 : </strong>Post hoc impie perpetratum quod in aliis quoque iam timebatur, tamquam licentia crudelitati indulta per suspicionum nebulas.
+                                <a href="action.html" class="cta">Consulter les actions</a>
+                            </li>
+                            <li>
+                                <strong>Objectif 3 : </strong>Post hoc impie perpetratum quod in aliis quoque iam timebatur, tamquam licentia crudelitati indulta per suspicionum nebulas.
+                                <a href="action.html" class="cta">Consulter les actions</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="actionTab mobile">
+                <div class="owl-carousel">
+                    <article>
+                        <div class="title">
+                            <div class="number">1</div>
+                            <div class="arrow arrowAction"></div>
+                        </div>
+                        <h3>Renforcer la prévention primaire au travail et la culture de prévention</h3>
+                        <div class="toggle"><p></p></div>
+                        <ul>
+                            <li>
+                                <strong>Objectif 1 : </strong>Favoriser la culture de prévention, accompagner l’évaluation des risques professionnels et les démarches de prévention
+                                <a href="action.html" class="cta">Consulter les actions</a>
+                            </li>
+                            <li>
+                                <strong>Objectif 2 : </strong>Accorder une priorité aux principaux risques professionnels
+                                <a href="action.html" class="cta">Consulter les actions</a>
+                            </li>
+                            <li>
+                                <strong>Objectif 3 : </strong>Favoriser la qualité de vie et des conditions de travail, en particulier sur le plan organisationnel
+                                <a href="action.html" class="cta">Consulter les actions</a>
+                            </li>
+                        </ul>
+                    </article>
+                    <article>
+                        <div class="title">
+                            <div class="number">2</div>
+                            <div class="arrow arrowAction"></div>
+                        </div>
+                        <h3>Structurer, développer la prévention de la désinsertion professionnelle, la prévention de l’usure, le maintien dans l’emploi et accompagner les salariés et les entreprises concernés</h3>
+                        <div class="toggle"><p></p></div>
+                        <ul>
+                            <li>
+                                <strong>Objectif 1 : </strong>Post hoc impie perpetratum quod in aliis quoque iam timebatur, tamquam licentia crudelitati indulta per suspicionum nebulas.
+                                <a href="action.html" class="cta">Consulter les actions</a>
+                            </li>
+                            <li>
+                                <strong>Objectif 2 : </strong>Post hoc impie perpetratum quod in aliis quoque iam timebatur, tamquam licentia crudelitati indulta per suspicionum nebulas.
+                                <a href="action.html" class="cta">Consulter les actions</a>
+                            </li>
+                            <li>
+                                <strong>Objectif 3 : </strong>Post hoc impie perpetratum quod in aliis quoque iam timebatur, tamquam licentia crudelitati indulta per suspicionum nebulas.
+                                <a href="action.html" class="cta">Consulter les actions</a>
+                            </li>
+                        </ul>
+                    </article>
+                    <article>
+                        <div class="title">
+                            <div class="number">3</div>
+                            <div class="arrow arrowAction"></div>
+                        </div>
+                        <h3>Adapter la politique de santé au travail aux défis d’aujourd’hui et de demain</h3>
+                        <div class="toggle"><p></p></div>
+                        <ul>
+                            <li>
+                                <strong>Objectif 1 : </strong>Post hoc impie perpetratum quod in aliis quoque iam timebatur, tamquam licentia crudelitati indulta per suspicionum nebulas.
+                                <a href="action.html" class="cta">Consulter les actions</a>
+                            </li>
+                            <li>
+                                <strong>Objectif 2 : </strong>Post hoc impie perpetratum quod in aliis quoque iam timebatur, tamquam licentia crudelitati indulta per suspicionum nebulas.
+                                <a href="action.html" class="cta">Consulter les actions</a>
+                            </li>
+                            <li>
+                                <strong>Objectif 3 : </strong>Post hoc impie perpetratum quod in aliis quoque iam timebatur, tamquam licentia crudelitati indulta per suspicionum nebulas.
+                                <a href="action.html" class="cta">Consulter les actions</a>
+                            </li>
+                        </ul>
+                    </article>
+                    <article>
+                        <div class="title">
+                            <div class="number">4</div>
+                            <div class="arrow arrowAction"></div>
+                        </div>
+                        <h3>Consolider le pilotage et la gouvernance de la prévention des risques professionnels et de la santé au travail</h3>
+                        <div class="toggle"><p></p></div>
+                        <ul>
+                            <li>
+                                <strong>Objectif 1 : </strong>Post hoc impie perpetratum quod in aliis quoque iam timebatur, tamquam licentia crudelitati indulta per suspicionum nebulas.
+                                <a href="action.html" class="cta">Consulter les actions</a>
+                            </li>
+                            <li>
+                                <strong>Objectif 2 : </strong>Post hoc impie perpetratum quod in aliis quoque iam timebatur, tamquam licentia crudelitati indulta per suspicionum nebulas.
+                                <a href="action.html" class="cta">Consulter les actions</a>
+                            </li>
+                            <li>
+                                <strong>Objectif 3 : </strong>Post hoc impie perpetratum quod in aliis quoque iam timebatur, tamquam licentia crudelitati indulta per suspicionum nebulas.
+                                <a href="action.html" class="cta">Consulter les actions</a>
+                            </li>
+                        </ul>
+                    </article>
+                    <article>
+                        <div class="title">
+                            <div class="btn">Transversal</div>
+                            <div class="arrow arrowAction"></div>
+                        </div>
+                        <h3>Lutter contre des accidents du travail graves et mortel</h3>
+                        <div class="toggle"><p></p></div>
+                        <ul>
+                            <li>
+                                <strong>Objectif 1 : </strong>Post hoc impie perpetratum quod in aliis quoque iam timebatur, tamquam licentia crudelitati indulta per suspicionum nebulas.
+                                <a href="action.html" class="cta">Consulter les actions</a>
+                            </li>
+                            <li>
+                                <strong>Objectif 2 : </strong>Post hoc impie perpetratum quod in aliis quoque iam timebatur, tamquam licentia crudelitati indulta per suspicionum nebulas.
+                                <a href="action.html" class="cta">Consulter les actions</a>
+                            </li>
+                            <li>
+                                <strong>Objectif 3 : </strong>Post hoc impie perpetratum quod in aliis quoque iam timebatur, tamquam licentia crudelitati indulta per suspicionum nebulas.
+                                <a href="action.html" class="cta">Consulter les actions</a>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+
+            <section class="columns container">
+                <div class="columns__left">
+                    <h2>Bilan du PRST 3 2016-2020 Hauts-de France</h2>
+                    <p>
+                        Le PRST3 Hauts-de-France, structuré autour de 3 axes (prévention primaire et culture de prévention, QVT et maintien en emploi, dialogue social et ressources pour l’action) a porté durant 5 années 9 objectifs opérationnels assortis de 24 fiches-action.
+                    </p>
+                    <p>
+                        Les résultats témoignent de l’importance de la mobilisation de l’ensemble des acteurs de prévention, dont 150 contributeurs sont identifiés.
+                    </p>
+                </div>
+                <div class="columns__right">
+                    <article>
+                        <h3>Le support de présentation</h3>
+                        <a href="" class="cta">Lire le document</a>
+                    </article>
+                    <article>
+                        <h3>Le bilan en infographies</h3>
+                        <a href="" class="cta">Lire le document</a>
+                    </article>
+                    <article>
+                        <h3>Le bilan en podcast</h3>
+                        <a href="" class="cta">Écouter le podcast</a>
+                    </article>
+                </div>
+            </section>
+
+            <section class="backgroundRedirection container">
+                <div class="owl-carousel">
+                    <div class="backgroundRedirection__column">
+                        <div class="text">
+                            <h3>Les grands axes du PRST</h3>
+                            <p>Post hoc impie perpetratum quod in aliis quoque iam timebatur, tamquam licentia.</p>
+                            <a href="" class="btn" role="button">En savoir plus</a>
+                        </div>
+                        <img src="assets/images/image2.jpeg" alt="Image" loading="lazy"> 
+                    </div>
+                    <div class="backgroundRedirection__column">
+                        <div class="text">
+                            <h3>Pourquoi ce portail ?</h3>
+                            <p>Post hoc impie perpetratum quod in aliis quoque iam timebatur, tamquam licentia.</p>
+                            <a href="" class="btn" role="button">En savoir plus</a>
+                        </div>
+                        <img src="assets/images/image2.jpeg" alt="Image" loading="lazy"> 
+                    </div>
+                    <div class="backgroundRedirection__column">
+                        <div class="text">
+                            <h3>Gouvernance</h3>
+                            <p>Post hoc impie perpetratum quod in aliis quoque iam timebatur, tamquam licentia.</p>
+                            <a href="" class="btn" role="button">En savoir plus</a>
+                        </div>
+                        <img src="assets/images/image2.jpeg" alt="Image" loading="lazy">
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- ONGLET POURQUOI CE PORTAIL -->
+        <section class="tab-content" id="tab-3">
+            <section class="imgTxt">
+                <div class="container">
+                    <div class="imgTxt__text">
+                        <p class="uptitle">Pourquoi ce portail ?</p>
+                        <h2>Le Plan Régional Santé Travail en Hauts-de-France</h2>
+                        <p>
+                            Au cœur du plan d’actions communication, la plateforme numérique du PRST 4 HDF est la porte d’entrée des sujets liés à la santé au travail en Hauts-de-France. Elle s’inscrit dans un écosystème dense, porté par les parties prenantes du PRST 4. Son rôle est d’apporter un premier niveau de réponse :
+                        </p>
+                        <ul>
+                            <li>Facilite l’accès à l’info, aux outils, plateformes en lien avec les thèmes prioritaires traités ds le cadre du PRST. Elle référence et contextualise toutes les ressources qui gravitent autour de la santé au travail en lien avec les priorités du PRST.</li>
+                            <li>Qui fait quoi ? En fonction du contexte du visiteur, la plateforme renseigne et renvoie vers l’interlocuteur adapté, en présentant succinctement la structure.</li>
+                            <li>Plus qu’un média, c’est avant tout une plateforme d’aide, portée par un moteur de recherche qui permet de renseigner et guider les visiteurs vers des ressources diverses (qui ? quoi ? outils, informations…)</li>
+                        </ul>
+                    </div>
+                    <div class="imgTxt__image">
+                        <img src="assets/images/image1.jpeg" alt="Image" loading="lazy">   
+                    </div>
+                </div>
+            </section>
+
+            <section class="backgroundColumns container">
+                <div class="backgroundColumns__list">
+                    <div>
+                        <img src="assets/images/icon-prevention.svg">
+                        <h3>Prévention</h3>
+                        <p>Être en tant que tel un outil de communication au service de la <strong>diffusion de la culture de la prévention</strong></p>
+                    </div>
+                    <div>
+                        <img src="assets/images/icon-passerelle.svg">
+                        <h3>Passerelle</h3>
+                        <p>Être une <strong>passerelle entre les publics cibles et les solutions/informations</strong> déjà existantes.</p>
+                    </div>
+                    <div>
+                        <img src="assets/images/icon-accessible.svg">
+                        <h3>Accessibilité</h3>
+                        <p><strong>Rendre accessible l'information</strong> sur les moyens de prévention, les aides et les appuis mobilisables en matière de santé au travail (dans la Région).</p>
+                    </div>
+                </div>
+                <a href="index.html" class="btn" role="button">Accéder à la FAQ</a>
+            </section>
+
+            <section class="imgTxt">
+                <div class="container">
+                    <div class="imgTxt__text">
+                        <h2>Cette plateforme n’est pas...</h2>
+                        <ul>
+                            <li>
+                                <span><strong>Exhaustive ;</strong></span><br>
+                                <p>Elle guide vers la ressource, la présente succinctement, la contextualise et propose un renvoi efficace.</p>
+                            </li>
+                            <li>
+                                <span><strong>Une encyclopédie ;</strong></span><br>
+                                <p>C’est une plateforme vivante qui ne s’interdit rien en matière de formats - vidéo, audio, infographie…</p>
+                            </li>
+                            <li>
+                                <span><strong>Un lieu de dépôt ;</strong></span><br>
+                                <p>Toute information, lien, outil vidéo ou document déposé sur la plateforme doit être commenté simplement, de manière accessible et concise.</p>
+                            </li>
+                            <li>
+                                <span><strong>Un être humain.</strong></span><br>
+                                <p>Parce que rien ne peut remplacer le contact, le conseil, l’expertise et la sensibilité humaine. La plateforme, elle, prolonge cet échange et l’enrichit.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="imgTxt__image">
+                        <img src="assets/images/image1.jpeg" alt="Image" loading="lazy">   
+                    </div>
+                </div>
+            </section>
+
+            <section class="backgroundRedirection container">
+                <div class="owl-carousel">
+                    <div class="backgroundRedirection__column">
+                        <div class="text">
+                            <h3>Les grands axes du PRST</h3>
+                            <p>Post hoc impie perpetratum quod in aliis quoque iam timebatur, tamquam licentia.</p>
+                            <a href="" class="btn" role="button">En savoir plus</a>
+                        </div>
+                        <img src="assets/images/image2.jpeg" alt="Image" loading="lazy"> 
+                    </div>
+                    <div class="backgroundRedirection__column">
+                        <div class="text">
+                            <h3>Pourquoi ce portail ?</h3>
+                            <p>Post hoc impie perpetratum quod in aliis quoque iam timebatur, tamquam licentia.</p>
+                            <a href="" class="btn" role="button">En savoir plus</a>
+                        </div>
+                        <img src="assets/images/image2.jpeg" alt="Image" loading="lazy"> 
+                    </div>
+                    <div class="backgroundRedirection__column">
+                        <div class="text">
+                            <h3>Gouvernance</h3>
+                            <p>Post hoc impie perpetratum quod in aliis quoque iam timebatur, tamquam licentia.</p>
+                            <a href="" class="btn" role="button">En savoir plus</a>
+                        </div>
+                        <img src="assets/images/image2.jpeg" alt="Image" loading="lazy">
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- ONGLET GOUVERNANCE -->
+        <!-- <section class="tab-content" id="tab-4">
+        </section> -->
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="firstColumn">
+                <div class="firstColumn__images">
+                   <a href="index.html">
+                       <img src="assets/images/logo.svg" alt="Logo PRST">
+                   </a>
+                   <a href="" target="_blank">
+                       <img src="assets/images/logo-dreets.svg" alt="Logo DREETS">
+                   </a>
+                </div>
+                <p>At nunc si ad aliquem bene nummatum tumentemque ideo honestus advena salutatum introieris, primitus tamquam exoptatus suscipieris et interrogat.</p>
+                <ul class="firstColumn__network">
+                    <a href="" target="_blank">
+                        <img src="assets/images/rs-linkedin.svg" alt="Linkedin">
+                    </a>
+                    <a href="" target="_blank">
+                        <img src="assets/images/rs-fb.svg" alt="Facebook">
+                    </a>
+                </ul>
+            </div>
+            <div class="secondColumn">
+                <ul class="secondColumn__menu">
+                    <li><a href="annuaire.html">Annuaire</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="presentation.html">Présentation</a></li>
+                    <li>
+                        <a href="" class="btn download" role="button">Télécharger le PRST 2022</a>
+                    </li>
+                </ul>
+                <ul class="secondColumn__menu">
+                    <li class="contact">Contact administrateur</li>
+                    <li><a href="rgpd.html">RGPD</a></li>
+                    <li><a href="mentions.html">Mentions légales</a></li>
+                    <li><a href="">Plan du site</a></li>
+                </ul>
+            </div>
+
+            <!-- POP-IN CONTACT ADMIN + OVERLAY -->
+            <section class="popinContact">
+                <div class="popinContact__text">
+                    <div class="introduction">
+                        <button class="closeContact secondary">Fermer</button>
+                        <h2>Contact administrateur</h2>
+                        <p>At nunc si ad aliquem bene nummatum tumentemque ideo honestus advena salutatum introieris, primitus tamquam exoptatus suscipieris et interrogat.</p>
+                    </div>
+                    <form>
+                        <div>
+                            <label>Lorem ipsum</label>
+                            <textarea placeholder="Message..."></textarea>
+                        </div>
+                        <button type="submit">Envoyer mon message</button>
+                    </form>
+                </div>
+            </section>
+            <section class="popinOverlayContact"></section>
+            <!-- POP-IN CONTACT ADMIN + OVERLAY -->
+
+            <div class="backToTop"></div>
+        </div>
+        <div id="overlay" class="overlay"></div>
+   </footer>
+   
+</body>
+</html>

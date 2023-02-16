@@ -1,0 +1,41 @@
+/* START SLIDERLOGO.SCSS */
+
+.sliderLogo {
+    text-align: center;
+    margin: 0 auto 56px auto;
+    padding: 0;
+
+    @media #{$laptop} {
+        margin: 0 auto 120px auto;
+    }  
+
+    @media #{$desktop} {
+        padding: 0 120px;
+    }  
+
+    .owl-item {
+        opacity: 0.4;
+
+        @media #{$large-phone} {
+            opacity: 1;
+        }  
+
+        &.center {
+            opacity: 1;
+        }
+
+        img {
+            max-height: 92px;
+    
+            @media #{$laptop} {
+                height: 88px
+            }  
+        }
+    }
+
+    .arrowLogo {
+        margin-top: 32px;
+    }
+}
+
+/* END SLIDERLOGO.SCSS */

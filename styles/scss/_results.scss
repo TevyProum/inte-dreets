@@ -1,0 +1,218 @@
+/* START RESULTS.SCSS */
+
+.titleSearch {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    @media #{$laptop} {
+        gap: 32px;
+    }
+
+    span {
+        font-style: italic;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+
+.results {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+    margin: 56px auto;
+
+    @media #{$laptop} {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 56px auto 120px auto;
+    }
+
+    &__left {
+        flex-basis: 60%;
+
+        .number {
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 28px;
+            margin-bottom: 32px;
+
+            @media #{$laptop} {
+                margin-bottom: 42px;
+            }
+
+            span {
+                font-size: 32px;
+                line-height: 40px;
+                padding-right: 12px;
+            }
+        }
+
+        h2 {
+            font-size: 22px;
+            line-height: 28px;
+            margin-bottom: 16px;
+
+            span {
+                color: $yellow900
+            }
+        }
+
+        .tags {
+            margin: 6px 0 16px 0;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 150%;
+        }
+
+        article:not(:last-child) {
+            margin-bottom: 28px;
+            padding-bottom: 28px;
+            border-bottom: 1px solid $grey100;
+        }
+
+        .pagination {
+            margin-top: 32px;
+
+            @media #{$laptop} {
+                margin-top: 80px;
+            }
+        }
+    }
+
+    &__right {
+        flex-basis: 33%;
+        background: $yellow900;
+        border-radius: 16px;
+        padding: 48px;
+        height: fit-content;
+
+        article:first-child {
+            margin-top: 40px;
+        }
+
+        article:not(:last-child) {
+            margin-bottom: 28px;
+            padding-bottom: 28px;
+            border-bottom: 1px solid $yellow300;
+        }
+
+        h3 {
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 28px;
+        }
+    }
+}
+
+.popinResults {
+    display: none;
+    position: absolute;
+    z-index: 1001;
+    left: 0;
+    right: 0;
+    margin-top: -42px;
+
+    &.display {
+        display: flex;
+        width: 100%;
+    }
+
+    .results {
+        background: white;
+        margin: 0 auto;
+        width: 100%;
+        border-radius: 16px;
+        padding: 16px;
+
+        @media #{$laptop} {
+            max-height: 900px;
+        }
+
+        &__left {
+            padding: 20px 0;
+
+            @media #{$laptop} {
+                padding: 48px;
+            }
+
+            .btn {
+                margin-top: 32px;
+            }
+
+            article {
+                margin-bottom: 24px;
+                padding-bottom: 24px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                    padding-bottom: 0;
+                }
+            }
+        }
+    
+        aside {
+            height: 100%;
+            flex-basis: 37.5%;
+            padding: 32px;
+            overflow: scroll;
+            max-height: 400px;
+
+            @media #{$laptop} {
+                padding: 48px;
+                max-height: 868px;
+            }
+
+            .tags {
+                margin: 20px 0;
+            }
+    
+            .logoBlock {
+                background: $white;
+                border-radius: 16px;
+                margin-top: 32px;
+                padding: 24px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 72px;
+                width: fit-content;
+                margin-bottom: 16px;
+    
+                img {
+                    object-fit: contain;
+                    max-height: 40px;
+                }
+            }
+
+            .arrow {
+                justify-content: initial;
+                margin-top: 32px;
+
+                &.arrowResults {
+                    button {
+                        background: white;
+    
+                        &:hover {
+                            background: $yellow100;
+                        }
+                    }
+    
+                    .disabled {
+                        cursor: pointer;
+                
+                        span {
+                            filter: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* END RESULTS.SCSS */

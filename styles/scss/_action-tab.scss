@@ -1,0 +1,176 @@
+/* START ACTION-TAB.SCSS */
+
+.actionTab {
+    display: flex;
+
+    @media #{$tablet} {
+        margin-bottom: 120px;
+    }
+
+    .number {
+        width: 40px;
+        height: 40px;
+        background: $yellow700;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 150%;
+
+        @media #{$large} {
+            width: 59px;
+            height: 59px;
+        }
+    }
+
+    &__left {
+        flex-basis: 37.5%;
+
+        .action-filter {
+            padding: 28px 7%;
+            border-radius: 16px 0px 0px 16px;
+            background-color: white;
+            opacity: 0.3;
+            transition: background-color 0.15s ease-in-out, opacity 0.15s ease-in-out;
+            display: flex;
+            gap: 32px;
+            justify-content: space-between;
+
+            p {
+                max-width: 295px;
+                flex-basis: 80%
+            }
+
+            &.active {
+                background-color: $yellow0;
+                opacity: 1;
+
+                p {
+                    font-weight: 700;
+                }
+            }
+
+            &:hover {
+                background-color: $yellow0;
+                cursor: pointer;
+                opacity: 1;
+            }
+        }
+    }
+
+    &__right {
+        flex-basis: 62.5%;
+        background-color: $yellow0;
+        border-radius: 0px 16px 16px 16px;
+        padding: 80px;
+
+        .action-content {
+            display: none;
+        
+            &.current {
+                display: block;
+            }
+
+            .number {
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 40px;
+                width: 72px;
+                height: 72px;
+            }
+
+            h3 {
+                margin: 32px 0 48px 0;
+            }
+    
+            li {
+                padding-bottom: 32px;
+    
+                &:last-child {
+                    padding-bottom: 0;
+                }
+            }
+        } 
+    }
+
+    &.desktop {
+        display: none;
+    
+        @media #{$desktop} {
+            display: flex;
+        }
+    }
+
+    &.mobile {
+        display: block;
+        background-color: $yellow0;
+        padding: 24px;
+        border-radius: 16px;
+        margin: 0 16px 56px 16px;
+    
+        @media #{$desktop} {
+            display: none;
+        }
+
+        .title {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 24px;
+
+            .number {
+                width: 40px;
+                height: 40px;
+                font-size: 14px;
+                line-height: 19px;
+            }
+        }
+
+        h3 {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 150%;
+        }
+
+        .toggle {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+
+            p::after {
+                content: 'Voir plus';
+            }
+
+            &::after {
+                content: url('../../assets/images/cta-down.svg');
+                height: 16px;
+            }
+
+            &.active {
+                &::after {
+                    content: url('../../assets/images/cta-up.svg');
+                    height: 16px;
+                }
+
+                p::after {
+                    content: 'Voir moins';
+                }
+            }
+        }
+
+        ul {
+            display: none;
+
+            &.active {
+                display: block;
+            }
+
+            li {
+                margin-top: 40px;
+            }
+        }
+    }
+}
+
+/* END ACTION-TAB.SCSS */

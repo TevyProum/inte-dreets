@@ -1,0 +1,61 @@
+/* START BACKGROUND-REDIRECTION.SCSS */
+
+.backgroundRedirection {
+    margin-bottom: 56px;
+
+    @media #{$tablet} {
+        margin-bottom: 120px;
+    }
+
+    &__column {
+        border-radius: 16px;
+        flex-basis: 31%;
+        margin: 0 8px;
+
+        @media #{$large-phone} {
+            margin: 0;
+        }   
+
+        .text {
+            padding: 32px;
+            background: $yellow0;
+            border-radius: 16px 16px 0px 6px;
+
+            h3 {
+                font-size: 20px;
+                line-height: 28px;
+                margin: 16px 0;
+                display: flex;
+                min-height: 56px;
+
+                @media #{$large-phone} {
+                    font-size: 24px;
+                    line-height: 32px;
+                    min-height: initial;
+                }         
+            }
+
+            p {
+                display: flex;
+                min-height: 100px;
+
+                @media #{$large-phone} {
+                    min-height: initial;
+                }  
+            }
+
+            .btn {
+                margin-top: 24px;
+            }
+        }
+
+        img {
+            border-radius: 0px 0px 16px 16px;
+            object-fit: cover;
+            max-height: 200px;
+            width: 100%;
+        }
+    }
+}
+
+/* END BACKGROUND-REDIRECTION.SCSS */

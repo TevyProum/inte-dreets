@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Marianne';
+    font-weight: 400;
+    src: url(../../assets/fonts/Marianne-Regular.woff);
+}
+
+@font-face {
+    font-family: 'Marianne';
+    font-weight: 500;
+    src: url(../../assets/fonts/Marianne-Medium.woff);
+}
+
+@font-face {
+    font-family: 'Marianne';
+    font-weight: 700;
+    src: url(../../assets/fonts/Marianne-Bold.woff);
+}
+
+@import './reset';
+@import './var';
+@import './common';
+@import './btn';
+@import './header';
+@import './footer';
+@import './hero';
+@import './cards';
+@import './imgtxt';
+@import './results';
+@import './redirection';
+@import './template';
+@import './tabs';
+@import './suggestion';
+@import './slidercards';
+@import './heading';
+@import './phonebook';
+@import './presentation';
+@import './columns';
+@import './background-columns';
+@import './background-redirection';
+@import './action-tab';
+@import './sliderlogo';
+@import './faq';
+@import './keyfigures';
+@import './popin';

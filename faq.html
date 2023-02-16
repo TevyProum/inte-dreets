@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/scss/styles.css" rel="stylesheet">
+    <title>FAQ - DREETS</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" defer></script>
+    <script src="js/menu.js" defer></script>
+    <script src="js/faq.js" defer></script>
+    <script src="js/popin.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <!-- "headerImages" => seulement sur mobile -->
+        <div class="headerImages">
+            <a href="index.html">
+                <img src="assets/images/logo.svg" alt="Logo PRST">
+            </a>
+            <div>
+                <button id="searchIcon"></button>
+                <button id="burger"></button>
+            </div>
+        </div>
+        <!-- "headerImages" => seulement sur mobile -->
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.svg" alt="Logo PRST">
+            </a>
+            <form class="searchBar">
+                <input type="search" placeholder="Rechercher une structure..." />
+                <button type="submit">Rechercher</button>
+            </form>
+            <nav>
+                <a href="annuaire.html">Annuaire</a>
+                <a href="faq.html">FAQ</a>
+                <a href="presentation.html">Présentation</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="heading container">
+            <span data-name="faq">FAQ</span>
+            <h1>Les questions les plus fréquentes</h1>
+            <p>Retrouvez ici une sélection de questions fréquemment posées autour du PRST en région Hauts-de-France, et de la plateforme.</p>
+        </section>
+
+        <section class="faq">
+            <article>
+                <div class="title">
+                    <h2>Post hoc impic perpetratum quod in aliis ?</h2>
+                </div>
+                <div class="description">
+                    <p>Fermentum, at morbi tortor purus sed non placerat erat. Vestibulum scelerisque faucibus arcu facilisis sit. Elit sit ut id aliquam nunc id nunc libero. Scelerisque diam tellus porta faucibus bibendum. Vulputate pulvinar ipsum sit egestas et non scelerisque egestas commodo. Cras eget elit, tempus, amet elementum dolor suspendisse sed. Non, pretium proin eget in felis cras in leo. Tincidunt et felis et venenatis feugiat nulla.</p>
+                    <a href="" class="btn" role="button">Bouton de redirection</a>
+                </div>
+                <div class="btn more"><span></span></div>
+            </article>
+            <article>
+                <div class="title">
+                    <h2>Post hoc impic perpetratum quod in aliis ?</h2>
+                </div>
+                <div class="description">
+                    <p>Fermentum, at morbi tortor purus sed non placerat erat. Vestibulum scelerisque faucibus arcu facilisis sit. Elit sit ut id aliquam nunc id nunc libero. Scelerisque diam tellus porta faucibus bibendum. Vulputate pulvinar ipsum sit egestas et non scelerisque egestas commodo. Cras eget elit, tempus, amet elementum dolor suspendisse sed. Non, pretium proin eget in felis cras in leo. Tincidunt et felis et venenatis feugiat nulla.</p>
+                    <a href="" class="btn" role="button">Bouton de redirection</a>
+                </div>
+                <div class="btn more"><span></span></div>
+            </article>
+            <article>
+                <div class="title">
+                    <h2>Post hoc impic perpetratum quod in aliis ?</h2>
+                </div>
+                <div class="description">
+                    <p>Fermentum, at morbi tortor purus sed non placerat erat. Vestibulum scelerisque faucibus arcu facilisis sit. Elit sit ut id aliquam nunc id nunc libero. Scelerisque diam tellus porta faucibus bibendum. Vulputate pulvinar ipsum sit egestas et non scelerisque egestas commodo. Cras eget elit, tempus, amet elementum dolor suspendisse sed. Non, pretium proin eget in felis cras in leo. Tincidunt et felis et venenatis feugiat nulla.</p>
+                    <a href="" class="btn" role="button">Bouton de redirection</a>
+                </div>
+                <div class="btn more"><span></span></div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="firstColumn">
+                <div class="firstColumn__images">
+                   <a href="index.html">
+                       <img src="assets/images/logo.svg" alt="Logo PRST">
+                   </a>
+                   <a href="" target="_blank">
+                       <img src="assets/images/logo-dreets.svg" alt="Logo DREETS">
+                   </a>
+                </div>
+                <p>At nunc si ad aliquem bene nummatum tumentemque ideo honestus advena salutatum introieris, primitus tamquam exoptatus suscipieris et interrogat.</p>
+                <ul class="firstColumn__network">
+                    <a href="" target="_blank">
+                        <img src="assets/images/rs-linkedin.svg" alt="Linkedin">
+                    </a>
+                    <a href="" target="_blank">
+                        <img src="assets/images/rs-fb.svg" alt="Facebook">
+                    </a>
+                </ul>
+            </div>
+            <div class="secondColumn">
+                <ul class="secondColumn__menu">
+                    <li><a href="annuaire.html">Annuaire</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="presentation.html">Présentation</a></li>
+                    <li>
+                        <a href="" class="btn download" role="button">Télécharger le PRST 2022</a>
+                    </li>
+                </ul>
+                <ul class="secondColumn__menu">
+                    <li class="contact">Contact administrateur</li>
+                    <li><a href="rgpd.html">RGPD</a></li>
+                    <li><a href="mentions.html">Mentions légales</a></li>
+                    <li><a href="">Plan du site</a></li>
+                </ul>
+            </div>
+
+            <!-- POP-IN CONTACT ADMIN + OVERLAY -->
+            <section class="popinContact">
+                <div class="popinContact__text">
+                    <div class="introduction">
+                        <button class="closeContact secondary">Fermer</button>
+                        <h2>Contact administrateur</h2>
+                        <p>At nunc si ad aliquem bene nummatum tumentemque ideo honestus advena salutatum introieris, primitus tamquam exoptatus suscipieris et interrogat.</p>
+                    </div>
+                    <form>
+                        <div>
+                            <label>Lorem ipsum</label>
+                            <textarea placeholder="Message..."></textarea>
+                        </div>
+                        <button type="submit">Envoyer mon message</button>
+                    </form>
+                </div>
+            </section>
+            <section class="popinOverlayContact"></section>
+            <!-- POP-IN CONTACT ADMIN + OVERLAY -->
+
+            <div class="backToTop"></div>
+        </div>
+        <div id="overlay" class="overlay"></div>
+   </footer>
+   
+</body>
+</html>

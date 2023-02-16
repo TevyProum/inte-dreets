@@ -1,0 +1,68 @@
+.sliderCards {
+    margin: 56px auto;
+    padding: 0;
+
+    @media #{$laptop} {
+        margin: 120px auto -56px auto;
+    }
+
+    @media #{$desktop} {
+        padding: 0 120px;
+    }  
+
+    &__title {
+        text-align: center;
+        padding: 0 30px;
+
+        @media #{$phone} {
+            padding: 0 16px;
+        }
+        
+        @media #{$laptop} {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        h3 {
+            margin-bottom: 14px;
+
+            @media #{$laptop} {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    &__list {
+        margin-top: 32px;
+
+        @media #{$laptop} {
+            margin-top: 0;
+        }
+
+        .owl-stage-outer {
+            padding: 10px 0 65px 0;
+
+            @media #{$laptop} {
+                padding: 10px 30px 65px 30px;
+            }
+
+            .card {
+                @media #{$phone} {
+                    margin: 0 16px;
+                }
+
+                .tags {
+                    margin: 16px 0;
+                }
+            }
+        }
+
+        .action & p {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+        }
+    }
+}
